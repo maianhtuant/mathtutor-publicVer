@@ -1,0 +1,1324 @@
+[
+  {
+    "reference": "/Users/minhanh/Documents/New project/gedtutor-guides/Huong-dan-Admin-GED-Tutor.docx",
+    "reference_sha256": "6111b1a5a84c5221ed47f901b4eca949215bef6dc0df1f877520c038c9cd82ee",
+    "output": "/Users/minhanh/Documents/New project/gedtutor-guides/GED-Tutor-Administrator-Guide-English.docx",
+    "slots": [
+      {
+        "index": 0,
+        "style": "Title",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 0"
+      },
+      {
+        "index": 1,
+        "style": "Subtitle",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 1"
+      },
+      {
+        "index": 2,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 2"
+      },
+      {
+        "index": 3,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 3"
+      },
+      {
+        "index": 4,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 4"
+      },
+      {
+        "index": 5,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 5"
+      },
+      {
+        "index": 6,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 6"
+      },
+      {
+        "index": 7,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 7"
+      },
+      {
+        "index": 8,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 8"
+      },
+      {
+        "index": 9,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 9"
+      },
+      {
+        "index": 10,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 10"
+      },
+      {
+        "index": 11,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 11"
+      },
+      {
+        "index": 12,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 12"
+      },
+      {
+        "index": 13,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 13"
+      },
+      {
+        "index": 14,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 14"
+      },
+      {
+        "index": 15,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 15"
+      },
+      {
+        "index": 16,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 16"
+      },
+      {
+        "index": 17,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 17"
+      },
+      {
+        "index": 18,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 18"
+      },
+      {
+        "index": 19,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 19"
+      },
+      {
+        "index": 20,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 20"
+      },
+      {
+        "index": 21,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 21"
+      },
+      {
+        "index": 22,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 22"
+      },
+      {
+        "index": 23,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 23"
+      },
+      {
+        "index": 24,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 24"
+      },
+      {
+        "index": 25,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 25"
+      },
+      {
+        "index": 26,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 26"
+      },
+      {
+        "index": 27,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 27"
+      },
+      {
+        "index": 28,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 28"
+      },
+      {
+        "index": 29,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 29"
+      },
+      {
+        "index": 30,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 30"
+      },
+      {
+        "index": 31,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 31"
+      },
+      {
+        "index": 32,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 32"
+      },
+      {
+        "index": 33,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 33"
+      },
+      {
+        "index": 34,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 34"
+      },
+      {
+        "index": 35,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 35"
+      },
+      {
+        "index": 36,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 36"
+      },
+      {
+        "index": 37,
+        "style": "Heading2",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 37"
+      },
+      {
+        "index": 38,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 38"
+      },
+      {
+        "index": 39,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 39"
+      },
+      {
+        "index": 40,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 40"
+      },
+      {
+        "index": 41,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 41"
+      },
+      {
+        "index": 42,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 42"
+      },
+      {
+        "index": 43,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 43"
+      },
+      {
+        "index": 44,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 44"
+      },
+      {
+        "index": 45,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 45"
+      },
+      {
+        "index": 46,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 46"
+      },
+      {
+        "index": 47,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 47"
+      },
+      {
+        "index": 48,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 48"
+      },
+      {
+        "index": 49,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 49"
+      },
+      {
+        "index": 50,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 50"
+      },
+      {
+        "index": 51,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 51"
+      },
+      {
+        "index": 52,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 52"
+      },
+      {
+        "index": 53,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 53"
+      },
+      {
+        "index": 54,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 54"
+      },
+      {
+        "index": 55,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 55"
+      },
+      {
+        "index": 56,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 56"
+      },
+      {
+        "index": 57,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 57"
+      },
+      {
+        "index": 58,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 58"
+      },
+      {
+        "index": 59,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 59"
+      },
+      {
+        "index": 60,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 60"
+      },
+      {
+        "index": 61,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 61"
+      },
+      {
+        "index": 62,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 62"
+      },
+      {
+        "index": 63,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 63"
+      },
+      {
+        "index": 64,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 64"
+      },
+      {
+        "index": 65,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 65"
+      },
+      {
+        "index": 66,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 66"
+      },
+      {
+        "index": 67,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 67"
+      },
+      {
+        "index": 68,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 68"
+      },
+      {
+        "index": 69,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 69"
+      },
+      {
+        "index": 70,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 70"
+      },
+      {
+        "index": 71,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 71"
+      },
+      {
+        "index": 72,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 72"
+      },
+      {
+        "index": 73,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 73"
+      },
+      {
+        "index": 74,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 74"
+      },
+      {
+        "index": 75,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 75"
+      },
+      {
+        "index": 76,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 76"
+      },
+      {
+        "index": 77,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 77"
+      },
+      {
+        "index": 78,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 78"
+      },
+      {
+        "index": 79,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 79"
+      },
+      {
+        "index": 80,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 80"
+      },
+      {
+        "index": 81,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 81"
+      },
+      {
+        "index": 82,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 82"
+      },
+      {
+        "index": 83,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 83"
+      },
+      {
+        "index": 84,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 84"
+      },
+      {
+        "index": 85,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 85"
+      },
+      {
+        "index": 86,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 86"
+      },
+      {
+        "index": 87,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 87"
+      },
+      {
+        "index": 88,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 88"
+      },
+      {
+        "index": 89,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 89"
+      },
+      {
+        "index": 90,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 90"
+      },
+      {
+        "index": 91,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 91"
+      },
+      {
+        "index": 92,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 92"
+      },
+      {
+        "index": 93,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 93"
+      },
+      {
+        "index": 94,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 94"
+      },
+      {
+        "index": 95,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 95"
+      },
+      {
+        "index": 96,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 96"
+      },
+      {
+        "index": 97,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 97"
+      },
+      {
+        "index": 98,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 98"
+      },
+      {
+        "index": 99,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 99"
+      },
+      {
+        "index": 100,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 100"
+      },
+      {
+        "index": 101,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 101"
+      },
+      {
+        "index": 102,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 102"
+      },
+      {
+        "index": 103,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 103"
+      },
+      {
+        "index": 104,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 104"
+      }
+    ],
+    "package_inventory": {
+      "[Content_Types].xml": {
+        "sha256": "1a1b7bf7aeab6ab754ba491b21600be5de0b06b910a5e1034eed09dfba6f5f1e",
+        "size": 1788,
+        "editable": false
+      },
+      "_rels/.rels": {
+        "sha256": "a9ae57efe9186f07d48303bcac5d54c7e359bf3f503939c03ad2954e5c59a5c4",
+        "size": 734,
+        "editable": false
+      },
+      "docProps/core.xml": {
+        "sha256": "d14be8284e406d14dc2a576b19f15e7f637b955f9e27a3d9ed871ec99606f7ba",
+        "size": 721,
+        "editable": false
+      },
+      "docProps/app.xml": {
+        "sha256": "be664981c3141cddfc59362beb287ebf20d0773660e2dd6faac5968a5930a081",
+        "size": 1132,
+        "editable": false
+      },
+      "word/document.xml": {
+        "sha256": "416423faa5a665fc702e3723f1809dcde6ba9f9ec11380b11647fcbc88fbab7f",
+        "size": 32835,
+        "editable": true
+      },
+      "word/_rels/document.xml.rels": {
+        "sha256": "284c2b291513e5ad40cd1b37a561f7812c732665c2e2599f5a16caa49a3e25a7",
+        "size": 2290,
+        "editable": false
+      },
+      "word/styles.xml": {
+        "sha256": "f480632a16e43b93484952d6046eda0c4817073174678cf4027f5e1c56adea0d",
+        "size": 349445,
+        "editable": false
+      },
+      "word/stylesWithEffects.xml": {
+        "sha256": "463ae0928cf0d84775dbf8cf18d6c3029f6707c81bf590f6d6dd8757a5e93f15",
+        "size": 438131,
+        "editable": false
+      },
+      "word/settings.xml": {
+        "sha256": "51a0d348fe85965c66e4748a03c3c0d055d78455514f03cb121c334af7d73689",
+        "size": 2535,
+        "editable": false
+      },
+      "word/webSettings.xml": {
+        "sha256": "349d36de7434d09f86987ff671d8814964a0588c1e630c06e562cda7e75e9f95",
+        "size": 438,
+        "editable": false
+      },
+      "word/fontTable.xml": {
+        "sha256": "79385fb7f60247507ecaffc292e9ebd52ea0657b8634f629ba6fccc54011d6bb",
+        "size": 2811,
+        "editable": false
+      },
+      "word/theme/theme1.xml": {
+        "sha256": "e3a8ab7db9ca7afca56f5f2820a56e8b660016c647773555b060b0a02ac76941",
+        "size": 10939,
+        "editable": false
+      },
+      "customXml/item1.xml": {
+        "sha256": "a86086ffc5d8e83ebd6c71a55d1d2efaa31b137977f5f3a752366e1023612144",
+        "size": 262,
+        "editable": false
+      },
+      "customXml/_rels/item1.xml.rels": {
+        "sha256": "1ca6c9a64edcebe24ee703a54403611b322d96da33371779e742d2d3f7ed7a6c",
+        "size": 295,
+        "editable": false
+      },
+      "customXml/itemProps1.xml": {
+        "sha256": "c542307b13ec29a8b546217bb37936ab4822e044b265d2952985ec3d6afed24e",
+        "size": 354,
+        "editable": false
+      },
+      "word/numbering.xml": {
+        "sha256": "70976f19cbcd896e51890859fe6ecb3467a5a7ad0c040160fedc5a1993cb09ce",
+        "size": 5513,
+        "editable": false
+      },
+      "word/media/image1.png": {
+        "sha256": "834ee4f654985b704a16d537302023acdd294f27e36cbeeb27eaa8cfbf8dc9a3",
+        "size": 49910,
+        "editable": false
+      },
+      "word/media/image2.png": {
+        "sha256": "bff479e0620f726ee82e8364b58fdf3d80af73c1bb0df91e5c3b069b8196f4ac",
+        "size": 152314,
+        "editable": false
+      },
+      "word/media/image3.png": {
+        "sha256": "4e6ed1ea99f1f65301cfa9f7ae2f6fa8a75a36d4b0474d9d147a2ebe19b1526b",
+        "size": 370412,
+        "editable": false
+      },
+      "word/media/image4.png": {
+        "sha256": "ef70bbc252a5e900b2d6fd4bbf65b48385a26c3764472331bc2c048489dfcc53",
+        "size": 109512,
+        "editable": false
+      },
+      "word/media/image5.png": {
+        "sha256": "b64d20068f39b312bd49c53432698e90385c12d27c8cc3625c8101e7e74339a9",
+        "size": 125473,
+        "editable": false
+      },
+      "word/media/image6.png": {
+        "sha256": "5505a1ba2793f06a08ebff0e7e632ced09b111b81407bfd60bc8e72ad85a6387",
+        "size": 248913,
+        "editable": false
+      },
+      "word/media/image7.png": {
+        "sha256": "a13dd6ad1ff8639680eb6075b7ac4f3185a01ba36832799fa1307818c37bccc4",
+        "size": 261271,
+        "editable": false
+      },
+      "word/media/image8.png": {
+        "sha256": "bbc5d435ec1c8c42200cbfa7145906bd5dcaf271104b66f96cdb8b82a98c62cf",
+        "size": 114527,
+        "editable": false
+      },
+      "docProps/thumbnail.jpeg": {
+        "sha256": "96367138dc44ce09bf2c8f0f8e49348a1478d2c5c0af69bbc2bbc38b63cdcead",
+        "size": 8324,
+        "editable": false
+      }
+    }
+  },
+  {
+    "reference": "/Users/minhanh/Documents/New project/gedtutor-guides/Huong-dan-Hoc-sinh-GED-Tutor.docx",
+    "reference_sha256": "fec37b680291fdeb0540fb61e16c6c6ed5ae4aff9abde06e8db7b0c68ccc1b92",
+    "output": "/Users/minhanh/Documents/New project/gedtutor-guides/GED-Tutor-Student-Guide-English.docx",
+    "slots": [
+      {
+        "index": 0,
+        "style": "Title",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 0"
+      },
+      {
+        "index": 1,
+        "style": "Subtitle",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 1"
+      },
+      {
+        "index": 2,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 2"
+      },
+      {
+        "index": 3,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 3"
+      },
+      {
+        "index": 4,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 4"
+      },
+      {
+        "index": 5,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 5"
+      },
+      {
+        "index": 6,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 6"
+      },
+      {
+        "index": 7,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 7"
+      },
+      {
+        "index": 8,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 8"
+      },
+      {
+        "index": 9,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 9"
+      },
+      {
+        "index": 10,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 10"
+      },
+      {
+        "index": 11,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 11"
+      },
+      {
+        "index": 12,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 12"
+      },
+      {
+        "index": 13,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 13"
+      },
+      {
+        "index": 14,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 14"
+      },
+      {
+        "index": 15,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 15"
+      },
+      {
+        "index": 16,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 16"
+      },
+      {
+        "index": 17,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 17"
+      },
+      {
+        "index": 18,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 18"
+      },
+      {
+        "index": 19,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 19"
+      },
+      {
+        "index": 20,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 20"
+      },
+      {
+        "index": 21,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 21"
+      },
+      {
+        "index": 22,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 22"
+      },
+      {
+        "index": 23,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 23"
+      },
+      {
+        "index": 24,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 24"
+      },
+      {
+        "index": 25,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 25"
+      },
+      {
+        "index": 26,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 26"
+      },
+      {
+        "index": 27,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 27"
+      },
+      {
+        "index": 28,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 28"
+      },
+      {
+        "index": 29,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 29"
+      },
+      {
+        "index": 30,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 30"
+      },
+      {
+        "index": 31,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 31"
+      },
+      {
+        "index": 32,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 32"
+      },
+      {
+        "index": 33,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 33"
+      },
+      {
+        "index": 34,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 34"
+      },
+      {
+        "index": 35,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 35"
+      },
+      {
+        "index": 36,
+        "style": "Heading1",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 36"
+      },
+      {
+        "index": 37,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 37"
+      },
+      {
+        "index": 38,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 38"
+      },
+      {
+        "index": 39,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 39"
+      },
+      {
+        "index": 40,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 40"
+      },
+      {
+        "index": 41,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 41"
+      },
+      {
+        "index": 42,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 42"
+      },
+      {
+        "index": 43,
+        "style": "Caption",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 43"
+      },
+      {
+        "index": 44,
+        "style": "Heading2",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 44"
+      },
+      {
+        "index": 45,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 45"
+      },
+      {
+        "index": 46,
+        "style": "",
+        "purpose": "English translation of source text",
+        "capacity": "existing paragraph; concise wording",
+        "location": "word/document.xml text paragraph 46"
+      }
+    ],
+    "package_inventory": {
+      "[Content_Types].xml": {
+        "sha256": "1a1b7bf7aeab6ab754ba491b21600be5de0b06b910a5e1034eed09dfba6f5f1e",
+        "size": 1788,
+        "editable": false
+      },
+      "_rels/.rels": {
+        "sha256": "a9ae57efe9186f07d48303bcac5d54c7e359bf3f503939c03ad2954e5c59a5c4",
+        "size": 734,
+        "editable": false
+      },
+      "docProps/core.xml": {
+        "sha256": "d14be8284e406d14dc2a576b19f15e7f637b955f9e27a3d9ed871ec99606f7ba",
+        "size": 721,
+        "editable": false
+      },
+      "docProps/app.xml": {
+        "sha256": "be664981c3141cddfc59362beb287ebf20d0773660e2dd6faac5968a5930a081",
+        "size": 1132,
+        "editable": false
+      },
+      "word/document.xml": {
+        "sha256": "010a6a4dc4ec4d635c2d1d92ec2006749f6978aeec27a0bbb0bd2c37f6138ce1",
+        "size": 15829,
+        "editable": true
+      },
+      "word/_rels/document.xml.rels": {
+        "sha256": "72d27f8473cabd04703e3278ace53be713fb45d6d0944f6ff8b0b4a640041f43",
+        "size": 2024,
+        "editable": false
+      },
+      "word/styles.xml": {
+        "sha256": "f480632a16e43b93484952d6046eda0c4817073174678cf4027f5e1c56adea0d",
+        "size": 349445,
+        "editable": false
+      },
+      "word/stylesWithEffects.xml": {
+        "sha256": "463ae0928cf0d84775dbf8cf18d6c3029f6707c81bf590f6d6dd8757a5e93f15",
+        "size": 438131,
+        "editable": false
+      },
+      "word/settings.xml": {
+        "sha256": "51a0d348fe85965c66e4748a03c3c0d055d78455514f03cb121c334af7d73689",
+        "size": 2535,
+        "editable": false
+      },
+      "word/webSettings.xml": {
+        "sha256": "349d36de7434d09f86987ff671d8814964a0588c1e630c06e562cda7e75e9f95",
+        "size": 438,
+        "editable": false
+      },
+      "word/fontTable.xml": {
+        "sha256": "79385fb7f60247507ecaffc292e9ebd52ea0657b8634f629ba6fccc54011d6bb",
+        "size": 2811,
+        "editable": false
+      },
+      "word/theme/theme1.xml": {
+        "sha256": "e3a8ab7db9ca7afca56f5f2820a56e8b660016c647773555b060b0a02ac76941",
+        "size": 10939,
+        "editable": false
+      },
+      "customXml/item1.xml": {
+        "sha256": "a86086ffc5d8e83ebd6c71a55d1d2efaa31b137977f5f3a752366e1023612144",
+        "size": 262,
+        "editable": false
+      },
+      "customXml/_rels/item1.xml.rels": {
+        "sha256": "1ca6c9a64edcebe24ee703a54403611b322d96da33371779e742d2d3f7ed7a6c",
+        "size": 295,
+        "editable": false
+      },
+      "customXml/itemProps1.xml": {
+        "sha256": "c542307b13ec29a8b546217bb37936ab4822e044b265d2952985ec3d6afed24e",
+        "size": 354,
+        "editable": false
+      },
+      "word/numbering.xml": {
+        "sha256": "70976f19cbcd896e51890859fe6ecb3467a5a7ad0c040160fedc5a1993cb09ce",
+        "size": 5513,
+        "editable": false
+      },
+      "word/media/image1.png": {
+        "sha256": "53b2901ca306ce2bcd2af5c90a6e62e2bcc8715a95dc9d5a2090641dfc54952c",
+        "size": 92198,
+        "editable": false
+      },
+      "word/media/image2.png": {
+        "sha256": "d6c757a0df51a97a35ce14a2e6c77b15ccac0fe39cd0867d62249a680f37802e",
+        "size": 110886,
+        "editable": false
+      },
+      "word/media/image3.png": {
+        "sha256": "fcb12bcae4770f1573328a31c5a34353aa895439116f4d9bc311bf69ecb73317",
+        "size": 155432,
+        "editable": false
+      },
+      "word/media/image4.png": {
+        "sha256": "26d908a51a31d16a0014026cbac5e16590f19075f49b43d3a4c7328a2e2aeea6",
+        "size": 185546,
+        "editable": false
+      },
+      "word/media/image5.png": {
+        "sha256": "641a25063001c15c5c4918d88031e7e407a2a3d7231efcae24867f1dca9b9c6d",
+        "size": 227228,
+        "editable": false
+      },
+      "word/media/image6.png": {
+        "sha256": "f682335b95a26b245e1bc594d5ccebf3a2f02fa304a512ae05d14bace791195f",
+        "size": 110225,
+        "editable": false
+      },
+      "docProps/thumbnail.jpeg": {
+        "sha256": "96367138dc44ce09bf2c8f0f8e49348a1478d2c5c0af69bbc2bbc38b63cdcead",
+        "size": 8324,
+        "editable": false
+      }
+    }
+  }
+]

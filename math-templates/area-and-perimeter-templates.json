@@ -1,0 +1,500 @@
+{
+  "schema_version": "1.0",
+  "title": "Area and Perimeter",
+  "subject_path": "Math-Template/Basic-Math/Area-and-Perimeter",
+  "scope": "Five shapes; each template asks for the area or the perimeter at random, with a hint and a figure.",
+  "template_count": 5,
+  "templates": [
+    {
+      "id": "AP01",
+      "label": "Circle: area and circumference",
+      "category": "Area-and-Perimeter",
+      "active": true,
+      "template": "{q}",
+      "answer_formula": "q.answer_formula",
+      "answer_mode": "numeric",
+      "variables": {
+        "r": {
+          "type": "integer",
+          "min": 1,
+          "max": 15
+        },
+        "q": {
+          "type": "text_choice",
+          "options": [
+            {
+              "text": "A circle has radius \\(r = {r}\\) cm. Find its area in square centimeters. Use \\(\\pi = 3.14\\). Hint: \\(A = \\pi r^{2}\\).",
+              "answer_formula": "3.14*r^2",
+              "figure": {
+                "shape": "circle",
+                "labels": {
+                  "radius": "r = {r} cm"
+                }
+              }
+            },
+            {
+              "text": "A circle has diameter \\(d = {d}\\) cm. Find its area in square centimeters. Use \\(\\pi = 3.14\\). Hint: the radius is half the diameter, \\(r = d \\div 2\\), then \\(A = \\pi r^{2}\\).",
+              "answer_formula": "3.14*(d/2)^2",
+              "figure": {
+                "shape": "circle",
+                "labels": {
+                  "diameter": "d = {d} cm"
+                }
+              }
+            },
+            {
+              "text": "A circle has radius \\(r = {r}\\) cm. Find its circumference (perimeter) in centimeters. Use \\(\\pi = 3.14\\). Hint: \\(C = 2\\pi r\\).",
+              "answer_formula": "2*3.14*r",
+              "figure": {
+                "shape": "circle",
+                "labels": {
+                  "radius": "r = {r} cm"
+                }
+              }
+            },
+            {
+              "text": "A circle has diameter \\(d = {d}\\) cm. Find its circumference (perimeter) in centimeters. Use \\(\\pi = 3.14\\). Hint: \\(C = \\pi d\\).",
+              "answer_formula": "3.14*d",
+              "figure": {
+                "shape": "circle",
+                "labels": {
+                  "diameter": "d = {d} cm"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "derived_variables": {
+        "d": "2*r"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "explanation": "Area A = πr²; circumference C = 2πr = πd; r = d ÷ 2."
+    },
+    {
+      "id": "AP02",
+      "label": "Square: area and perimeter",
+      "category": "Area-and-Perimeter",
+      "active": true,
+      "template": "{q}",
+      "answer_formula": "q.answer_formula",
+      "answer_mode": "numeric",
+      "variables": {
+        "s": {
+          "type": "integer",
+          "min": 2,
+          "max": 20
+        },
+        "q": {
+          "type": "text_choice",
+          "options": [
+            {
+              "text": "A square has side length \\(s = {s}\\) cm. Find its area in square centimeters. Hint: \\(A = s^{2}\\).",
+              "answer_formula": "s^2"
+            },
+            {
+              "text": "A square has side length \\(s = {s}\\) cm. Find its perimeter in centimeters. Hint: a square has 4 equal sides, so \\(P = 4s\\).",
+              "answer_formula": "4*s"
+            }
+          ]
+        }
+      },
+      "derived_variables": {},
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "explanation": "Area A = s²; perimeter P = 4s.",
+      "figure": {
+        "shape": "square",
+        "labels": {
+          "side": "{s} cm"
+        }
+      }
+    },
+    {
+      "id": "AP03",
+      "label": "Triangle: area and perimeter (with height)",
+      "category": "Area-and-Perimeter",
+      "active": true,
+      "template": "{q}",
+      "answer_formula": "q.answer_formula",
+      "answer_mode": "numeric",
+      "variables": {
+        "q": {
+          "type": "text_choice",
+          "options": [
+            {
+              "text": "A triangle has base \\(b = {b}\\) cm and height \\(h = {h}\\) cm. Its other two sides are {a} cm and {c} cm. Find its area in square centimeters. Hint: \\(A = \\tfrac{1}{2} \\times b \\times h\\).",
+              "answer_formula": "b*h/2",
+              "variables": {
+                "m": {
+                  "type": "integer",
+                  "min": 1,
+                  "max": 6
+                }
+              },
+              "derived_variables": {
+                "a": "13*m",
+                "b": "14*m",
+                "c": "15*m",
+                "h": "12*m"
+              },
+              "figure": {
+                "shape": "triangle",
+                "labels": {
+                  "base": "{b} cm",
+                  "height": "h = {h} cm",
+                  "left": "{a} cm",
+                  "right": "{c} cm"
+                },
+                "size": {
+                  "base": "b",
+                  "height": "h",
+                  "apex": "5/14"
+                }
+              }
+            },
+            {
+              "text": "A triangle has base \\(b = {b}\\) cm and height \\(h = {h}\\) cm. Its other two sides are {a} cm and {c} cm. Find its area in square centimeters. Hint: \\(A = \\tfrac{1}{2} \\times b \\times h\\).",
+              "answer_formula": "b*h/2",
+              "variables": {
+                "m": {
+                  "type": "integer",
+                  "min": 1,
+                  "max": 8
+                }
+              },
+              "derived_variables": {
+                "a": "5*m",
+                "b": "6*m",
+                "c": "5*m",
+                "h": "4*m"
+              },
+              "figure": {
+                "shape": "triangle",
+                "labels": {
+                  "base": "{b} cm",
+                  "height": "h = {h} cm",
+                  "left": "{a} cm",
+                  "right": "{c} cm"
+                },
+                "size": {
+                  "base": "b",
+                  "height": "h",
+                  "apex": "1/2"
+                }
+              }
+            },
+            {
+              "text": "A triangle has base \\(b = {b}\\) cm and height \\(h = {h}\\) cm. Its other two sides are {a} cm and {c} cm. Find its area in square centimeters. Hint: \\(A = \\tfrac{1}{2} \\times b \\times h\\).",
+              "answer_formula": "b*h/2",
+              "variables": {
+                "m": {
+                  "type": "integer",
+                  "min": 1,
+                  "max": 5
+                }
+              },
+              "derived_variables": {
+                "a": "10*m",
+                "b": "21*m",
+                "c": "17*m",
+                "h": "8*m"
+              },
+              "figure": {
+                "shape": "triangle",
+                "labels": {
+                  "base": "{b} cm",
+                  "height": "h = {h} cm",
+                  "left": "{a} cm",
+                  "right": "{c} cm"
+                },
+                "size": {
+                  "base": "b",
+                  "height": "h",
+                  "apex": "6/21"
+                }
+              }
+            },
+            {
+              "text": "A triangle has base \\(b = {b}\\) cm and height \\(h = {h}\\) cm. Its other two sides are {a} cm and {c} cm. Find its area in square centimeters. Hint: \\(A = \\tfrac{1}{2} \\times b \\times h\\).",
+              "answer_formula": "b*h/2",
+              "variables": {
+                "m": {
+                  "type": "integer",
+                  "min": 1,
+                  "max": 5
+                }
+              },
+              "derived_variables": {
+                "a": "13*m",
+                "b": "21*m",
+                "c": "20*m",
+                "h": "12*m"
+              },
+              "figure": {
+                "shape": "triangle",
+                "labels": {
+                  "base": "{b} cm",
+                  "height": "h = {h} cm",
+                  "left": "{a} cm",
+                  "right": "{c} cm"
+                },
+                "size": {
+                  "base": "b",
+                  "height": "h",
+                  "apex": "5/21"
+                }
+              }
+            },
+            {
+              "text": "A triangle has base \\(b = {b}\\) cm and height \\(h = {h}\\) cm. Its other two sides are {a} cm and {c} cm. Find its perimeter in centimeters. Hint: the perimeter is the sum of the three sides, \\(P = a + b + c\\); the height is not a side.",
+              "answer_formula": "a+b+c",
+              "variables": {
+                "m": {
+                  "type": "integer",
+                  "min": 1,
+                  "max": 6
+                }
+              },
+              "derived_variables": {
+                "a": "13*m",
+                "b": "14*m",
+                "c": "15*m",
+                "h": "12*m"
+              },
+              "figure": {
+                "shape": "triangle",
+                "labels": {
+                  "base": "{b} cm",
+                  "height": "h = {h} cm",
+                  "left": "{a} cm",
+                  "right": "{c} cm"
+                },
+                "size": {
+                  "base": "b",
+                  "height": "h",
+                  "apex": "5/14"
+                }
+              }
+            },
+            {
+              "text": "A triangle has base \\(b = {b}\\) cm and height \\(h = {h}\\) cm. Its other two sides are {a} cm and {c} cm. Find its perimeter in centimeters. Hint: the perimeter is the sum of the three sides, \\(P = a + b + c\\); the height is not a side.",
+              "answer_formula": "a+b+c",
+              "variables": {
+                "m": {
+                  "type": "integer",
+                  "min": 1,
+                  "max": 8
+                }
+              },
+              "derived_variables": {
+                "a": "5*m",
+                "b": "6*m",
+                "c": "5*m",
+                "h": "4*m"
+              },
+              "figure": {
+                "shape": "triangle",
+                "labels": {
+                  "base": "{b} cm",
+                  "height": "h = {h} cm",
+                  "left": "{a} cm",
+                  "right": "{c} cm"
+                },
+                "size": {
+                  "base": "b",
+                  "height": "h",
+                  "apex": "1/2"
+                }
+              }
+            },
+            {
+              "text": "A triangle has base \\(b = {b}\\) cm and height \\(h = {h}\\) cm. Its other two sides are {a} cm and {c} cm. Find its perimeter in centimeters. Hint: the perimeter is the sum of the three sides, \\(P = a + b + c\\); the height is not a side.",
+              "answer_formula": "a+b+c",
+              "variables": {
+                "m": {
+                  "type": "integer",
+                  "min": 1,
+                  "max": 5
+                }
+              },
+              "derived_variables": {
+                "a": "10*m",
+                "b": "21*m",
+                "c": "17*m",
+                "h": "8*m"
+              },
+              "figure": {
+                "shape": "triangle",
+                "labels": {
+                  "base": "{b} cm",
+                  "height": "h = {h} cm",
+                  "left": "{a} cm",
+                  "right": "{c} cm"
+                },
+                "size": {
+                  "base": "b",
+                  "height": "h",
+                  "apex": "6/21"
+                }
+              }
+            },
+            {
+              "text": "A triangle has base \\(b = {b}\\) cm and height \\(h = {h}\\) cm. Its other two sides are {a} cm and {c} cm. Find its perimeter in centimeters. Hint: the perimeter is the sum of the three sides, \\(P = a + b + c\\); the height is not a side.",
+              "answer_formula": "a+b+c",
+              "variables": {
+                "m": {
+                  "type": "integer",
+                  "min": 1,
+                  "max": 5
+                }
+              },
+              "derived_variables": {
+                "a": "13*m",
+                "b": "21*m",
+                "c": "20*m",
+                "h": "12*m"
+              },
+              "figure": {
+                "shape": "triangle",
+                "labels": {
+                  "base": "{b} cm",
+                  "height": "h = {h} cm",
+                  "left": "{a} cm",
+                  "right": "{c} cm"
+                },
+                "size": {
+                  "base": "b",
+                  "height": "h",
+                  "apex": "5/21"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "derived_variables": {},
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "explanation": "Area A = ½ × base × height; perimeter P = sum of the three sides (the height is not a side)."
+    },
+    {
+      "id": "AP04",
+      "label": "Rectangle: area and perimeter",
+      "category": "Area-and-Perimeter",
+      "active": true,
+      "template": "{q}",
+      "answer_formula": "q.answer_formula",
+      "answer_mode": "numeric",
+      "variables": {
+        "l": {
+          "type": "integer",
+          "min": 3,
+          "max": 25
+        },
+        "w": {
+          "type": "integer",
+          "min": 2,
+          "max": 15
+        },
+        "q": {
+          "type": "text_choice",
+          "options": [
+            {
+              "text": "A rectangle has length \\(l = {l}\\) cm and width \\(w = {w}\\) cm. Find its area in square centimeters. Hint: \\(A = l \\times w\\).",
+              "answer_formula": "l*w"
+            },
+            {
+              "text": "A rectangle has length \\(l = {l}\\) cm and width \\(w = {w}\\) cm. Find its perimeter in centimeters. Hint: \\(P = 2(l + w)\\).",
+              "answer_formula": "2*(l+w)"
+            }
+          ]
+        }
+      },
+      "derived_variables": {},
+      "constraints": [
+        "w < l"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "explanation": "Area A = l × w; perimeter P = 2(l + w).",
+      "figure": {
+        "shape": "rectangle",
+        "labels": {
+          "width": "l = {l} cm",
+          "height": "w = {w} cm"
+        },
+        "size": {
+          "width": "l",
+          "height": "w"
+        }
+      }
+    },
+    {
+      "id": "AP05",
+      "label": "Ellipse: area and perimeter",
+      "category": "Area-and-Perimeter",
+      "active": true,
+      "template": "{q}",
+      "answer_formula": "q.answer_formula",
+      "answer_mode": "numeric",
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 3,
+          "max": 12
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 10
+        },
+        "q": {
+          "type": "text_choice",
+          "options": [
+            {
+              "text": "An ellipse has semi-axes \\(a = {a}\\) cm and \\(b = {b}\\) cm. Find its area in square centimeters. Use \\(\\pi = 3.14\\). Hint: \\(A = \\pi a b\\).",
+              "answer_formula": "3.14*a*b"
+            },
+            {
+              "text": "An ellipse has semi-axes \\(a = {a}\\) cm and \\(b = {b}\\) cm. Find its perimeter in centimeters, rounded to the nearest hundredth. Use \\(\\pi = 3.14\\). Hint: use Ramanujan's formula \\(P \\approx \\pi\\left[3(a + b) - \\sqrt{(3a + b)(a + 3b)}\\right]\\).",
+              "answer_formula": "3.14*(3*(a+b) - sqrt((3*a+b)*(a+3*b)))"
+            }
+          ]
+        }
+      },
+      "derived_variables": {},
+      "constraints": [
+        "b < a"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": true,
+      "explanation": "Area A = πab; perimeter (Ramanujan) P ≈ π[3(a + b) − √((3a + b)(a + 3b))], rounded to 2 decimals.",
+      "figure": {
+        "shape": "ellipse",
+        "labels": {
+          "a": "a = {a} cm",
+          "b": "b = {b} cm"
+        },
+        "size": {
+          "a": "a",
+          "b": "b"
+        }
+      }
+    }
+  ]
+}

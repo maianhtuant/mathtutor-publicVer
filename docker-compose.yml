@@ -1,0 +1,69 @@
+name: mathtutor
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: mathtutor
+      POSTGRES_USER: ${DB_USERNAME:-mathtutor}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-mathtutor}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d mathtutor"]
+      interval: 5s
+      retries: 10
+
+  pgadmin:
+    image: dpage/pgadmin4:9
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@mathtutor.dev}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: "False"
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    volumes:
+      - ./database/pgadmin/servers.json:/pgadmin4/servers.json:ro
+    depends_on:
+      - postgres
+
+  math-service:
+    build: ./math-service
+    environment:
+      MATH_SERVICE_API_KEY: ${MATH_SERVICE_API_KEY:-dev-math-key}
+    ports:
+      - "${MATH_SERVICE_PORT:-8000}:8000"
+
+  backend:
+    build: ./backend
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/mathtutor
+      DB_USERNAME: ${DB_USERNAME:-mathtutor}
+      DB_PASSWORD: ${DB_PASSWORD:-mathtutor}
+      MATH_SERVICE_URL: http://math-service:8000
+      MATH_SERVICE_API_KEY: ${MATH_SERVICE_API_KEY:-dev-math-key}
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in .env to a long random value, e.g. openssl rand -base64 48}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@mathtutor.local}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-Admin@123}
+      SEED_DEMO_DATA: ${SEED_DEMO_DATA:-true}
+      CORS_ORIGINS: http://localhost:${FRONTEND_PORT:-3000}
+    ports:
+      - "${BACKEND_PORT:-8080}:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      math-service:
+        condition: service_healthy
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "${FRONTEND_PORT:-3000}:80"
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:

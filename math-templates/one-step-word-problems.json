@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0",
+  "title": "One-Step Equations Word Problem Template",
+  "topic_path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+  "scope": "One word-problem template (OSW) that picks one of 7 one-step equation stories at random via a text_choice variable. Every story is built so the answer is an integer.",
+  "sources": [],
+  "template_count": 1,
+  "templates": [
+    {
+      "id": "OSW",
+      "label": "Word problem: one-step equation (random story)",
+      "category": "One-Step Equations",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [
+        "A.2.b",
+        "Q.3.c"
+      ],
+      "template": "{story}",
+      "template_latex": "{story}",
+      "answer_formula": "story.answer_formula",
+      "answer_rule": "story.answer_formula",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "story": {
+          "type": "text_choice",
+          "options": [
+            {
+              "text": "Maria had some stickers. After a friend gave her {a} more, she has {c} stickers. How many stickers did Maria start with?",
+              "variables": {
+                "a": {
+                  "type": "integer",
+                  "min": 3,
+                  "max": 25
+                },
+                "n": {
+                  "type": "integer",
+                  "min": 5,
+                  "max": 40
+                }
+              },
+              "derived_variables": {
+                "c": "n+a"
+              },
+              "answer_formula": "c-a",
+              "validation_identity": "answer+a==c",
+              "explanation": "Let x be the starting number: x + a = c, so x = c − a."
+            },
+            {
+              "text": "After spending \\(\\${a}\\) on lunch, Jamal has \\(\\${c}\\) left. How many dollars did he have before lunch?",
+              "variables": {
+                "a": {
+                  "type": "integer",
+                  "min": 3,
+                  "max": 25
+                },
+                "c": {
+                  "type": "integer",
+                  "min": 1,
+                  "max": 40
+                }
+              },
+              "derived_variables": {},
+              "answer_formula": "c+a",
+              "validation_identity": "answer-a==c",
+              "explanation": "Let x be the money before lunch: x − a = c, so x = c + a."
+            },
+            {
+              "text": "The temperature fell {a} degrees overnight. The morning temperature was \\({c}\\) °F. What was the temperature the evening before, in °F?",
+              "variables": {
+                "a": {
+                  "type": "integer",
+                  "min": 2,
+                  "max": 15
+                },
+                "c": {
+                  "type": "integer",
+                  "min": -10,
+                  "max": 30
+                }
+              },
+              "derived_variables": {},
+              "answer_formula": "c+a",
+              "validation_identity": "answer-a==c",
+              "explanation": "Let x be the evening temperature: x − a = c, so x = c + a."
+            },
+            {
+              "text": "Movie tickets cost \\(\\${p}\\) each. A group paid \\(\\${t}\\) in all. How many tickets did the group buy?",
+              "variables": {
+                "p": {
+                  "type": "integer",
+                  "min": 6,
+                  "max": 15
+                },
+                "n": {
+                  "type": "integer",
+                  "min": 2,
+                  "max": 12
+                }
+              },
+              "derived_variables": {
+                "t": "p*n"
+              },
+              "answer_formula": "t/p",
+              "validation_identity": "p*answer==t",
+              "explanation": "Let x be the number of tickets: p·x = t, so x = t ÷ p."
+            },
+            {
+              "text": "A bag of candy was shared equally among {a} friends. Each friend got {b} pieces. How many pieces were in the bag?",
+              "variables": {
+                "a": {
+                  "type": "integer",
+                  "min": 2,
+                  "max": 10
+                },
+                "b": {
+                  "type": "integer",
+                  "min": 3,
+                  "max": 15
+                }
+              },
+              "derived_variables": {},
+              "answer_formula": "a*b",
+              "validation_identity": "answer/a==b",
+              "explanation": "Let x be the pieces in the bag: x ÷ a = b, so x = a·b."
+            },
+            {
+              "text": "A printer prints {b} pages every {c} minutes. At this rate, how many pages does it print in {m} minutes?",
+              "variables": {
+                "b": {
+                  "type": "integer",
+                  "min": 5,
+                  "max": 30
+                },
+                "c": {
+                  "type": "integer",
+                  "min": 2,
+                  "max": 5
+                },
+                "k": {
+                  "type": "integer",
+                  "min": 2,
+                  "max": 8
+                }
+              },
+              "derived_variables": {
+                "m": "c*k"
+              },
+              "answer_formula": "b*m/c",
+              "validation_identity": "answer*c==b*m",
+              "explanation": "Set up x/m = b/c and multiply both sides by m: x = b·m ÷ c."
+            },
+            {
+              "text": "On a map, 1 inch represents {s} miles. Two towns are {d} miles apart. How many inches apart are they on the map?",
+              "variables": {
+                "s": {
+                  "type": "integer",
+                  "min": 5,
+                  "max": 50
+                },
+                "k": {
+                  "type": "integer",
+                  "min": 2,
+                  "max": 12
+                }
+              },
+              "derived_variables": {
+                "d": "s*k"
+              },
+              "answer_formula": "d/s",
+              "validation_identity": "s*answer==d",
+              "explanation": "Let x be the map distance: s·x = d, so x = d ÷ s."
+            }
+          ]
+        }
+      },
+      "derived_variables": {},
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "text_choice"
+      ],
+      "explanation": "Let x be the unknown, write the one-step equation from the story, then undo the operation to find x.",
+      "diagram": null,
+      "validation_identity": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Compare exact values; apply stated rounding only.",
+      "example": {
+        "variables": {
+          "story": "1",
+          "a": "7",
+          "n": "9",
+          "c": "16"
+        },
+        "question_latex": "Maria had some stickers. After a friend gave her 7 more, she has 16 stickers. How many stickers did Maria start with?",
+        "answer": "9",
+        "answer_latex": "9",
+        "exact_answer": {
+          "numerator": "9",
+          "denominator": "1"
+        }
+      },
+      "numeric_form_compatible": false
+    }
+  ]
+}

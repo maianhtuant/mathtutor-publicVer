@@ -1,0 +1,13 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "MathTutor (docker)",
+      "Group": "Servers",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "mathtutor",
+      "Username": "mathtutor",
+      "SSLMode": "prefer"
+    }
+  }
+}

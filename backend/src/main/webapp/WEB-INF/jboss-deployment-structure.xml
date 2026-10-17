@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Spring Boot brings its own libraries. Keep WildFly/JBoss from wiring its JAX-RS, JPA and
+  logging implementations into this deployment so they do not clash with Spring's.
+-->
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+    <deployment>
+        <exclude-subsystems>
+            <subsystem name="jaxrs"/>
+            <subsystem name="jpa"/>
+            <subsystem name="logging"/>
+            <subsystem name="microprofile-opentracing-smallrye"/>
+        </exclude-subsystems>
+        <exclusions>
+            <module name="org.slf4j"/>
+            <module name="org.slf4j.impl"/>
+            <module name="org.apache.logging.log4j.api"/>
+            <module name="com.fasterxml.jackson.core.jackson-core"/>
+            <module name="com.fasterxml.jackson.core.jackson-databind"/>
+            <module name="com.fasterxml.jackson.core.jackson-annotations"/>
+        </exclusions>
+        <dependencies>
+            <module name="jdk.unsupported"/>
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

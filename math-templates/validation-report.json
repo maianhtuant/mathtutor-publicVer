@@ -1,0 +1,10 @@
+{
+  "templates": 163,
+  "numeric": 127,
+  "numeric_form_subset": 89,
+  "content_indicators": 62,
+  "sample_evaluations": 4890,
+  "equation_identity_checks": 390,
+  "verification": "30 sampled evaluations per template; numeric formula/domain checks and selected independent equation residual checks. Symbolic grading and rendering need implementation and further validation.",
+  "independent_known_answer_checks": 9
+}

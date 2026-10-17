@@ -1,0 +1,101 @@
+@startuml
+left to right direction
+actor "Học viên" as Student
+actor "Admin" as Admin
+actor "Giáo viên" as Teacher
+actor "Biên tập viên" as Editor
+actor "Giám sát" as Supervisor
+rectangle "Website học toán" {
+  usecase "Đăng ký tài khoản" as Register
+  usecase "Đăng nhập" as Login
+  usecase "Đăng ký khóa học" as Enroll
+  usecase "Học bài" as Study
+  usecase "Bắt đầu / tiếp tục practice set" as Start
+  usecase "Sinh và lưu snapshot đề mới" as Generate
+  usecase "Lưu đáp án" as Save
+  usecase "Nộp bài" as Submit
+  usecase "Chấm theo snapshot" as Grade
+  usecase "Xem tiến độ và kết quả theo kỹ năng" as Progress
+  usecase "Quản lý tài khoản" as Accounts
+  usecase "Quản lý nội dung" as Content
+  usecase "Tạo / sửa bản nháp math template" as Templates
+  usecase "Preview template" as TemplatePreview
+  usecase "Công bố phiên bản template" as PublishTemplate
+  usecase "Tạo / sửa practice set" as Sets
+  usecase "Chọn mẫu, phiên bản và số lượng câu" as Rules
+  usecase "Preview practice set" as SetPreview
+  usecase "Công bố practice set" as PublishSet
+  usecase "Cấp / thu hồi practice cho học viên" as Assign
+  usecase "Xem các practice được cấp" as Assigned
+  usecase "Kiểm tra quyền practice" as Access
+  usecase "Xem báo cáo học tập" as Reports
+  usecase "Tạo học viên trong khóa / lớp của mình" as CreateStudent
+  usecase "Nhập ngân hàng mẫu" as ImportBank
+  usecase "Xem mọi thứ (chỉ đọc)" as ViewAll
+}
+Student --> Register
+Student --> Login
+Student --> Enroll
+Student --> Study
+Student --> Assigned
+Student --> Start
+Student --> Save
+Student --> Submit
+Student --> Progress
+Admin --> Login
+Admin --> Accounts
+Admin --> Content
+Admin --> Templates
+Admin --> TemplatePreview
+Admin --> PublishTemplate
+Admin --> Sets
+Admin --> SetPreview
+Admin --> PublishSet
+Admin --> Assign
+Admin --> Reports
+Admin --> ImportBank
+Teacher --> Login
+Teacher --> CreateStudent
+Teacher --> Templates
+Teacher --> TemplatePreview
+Teacher --> PublishTemplate
+Teacher --> ImportBank
+Teacher --> Sets
+Teacher --> SetPreview
+Teacher --> PublishSet
+Teacher --> Assign
+Teacher --> Reports
+Editor --> Login
+Editor --> Content
+Editor --> Templates
+Editor --> TemplatePreview
+Editor --> PublishTemplate
+Editor --> ImportBank
+Editor --> Sets
+Editor --> SetPreview
+Editor --> PublishSet
+Supervisor --> Login
+Supervisor --> ViewAll
+Supervisor --> Reports
+Generate ..> Start : <<extend>>\n[chưa có lượt mở và đủ điều kiện]
+Sets ..> Rules : <<include>>
+Start ..> Access : <<include>>
+Save ..> Access : <<include>>
+Submit ..> Access : <<include>>
+Submit ..> Grade : <<include>>
+note bottom of Start
+  Phải đăng nhập và được admin cấp set.
+  Tiếp tục lượt đang mở đọc lại snapshot.
+  Chỉ tạo đề khi bắt đầu lượt mới.
+end note
+note bottom of Login
+  Đăng nhập là tiền điều kiện của
+  các chức năng yêu cầu xác thực.
+end note
+note right of Teacher
+  Giáo viên: chỉ mẫu / set của mình và học viên của mình
+  (đăng ký khóa của họ hoặc có tag lớp của họ).
+  Biên tập viên: mọi nội dung, không có tài khoản hay dữ liệu học viên.
+  Giám sát: xem mọi thứ, không thay đổi gì.
+end note
+@enduml

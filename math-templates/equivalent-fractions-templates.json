@@ -1,0 +1,886 @@
+{
+  "schema_version": "1.0",
+  "title": "GED Math: Equivalent Fractions Template Bank",
+  "scope": "Original practice templates for Math > GED Math > Chapter 1: Fractions > Equivalent Fractions. Not official GED exam items. GED target mappings are intentionally unspecified.",
+  "sources": [],
+  "template_count": 12,
+  "templates": [
+    {
+      "id": "EF01",
+      "label": "Missing numerator: multiply",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "Find the missing number: \\(\\frac{{a}}{{b}}=\\frac{\\square}{{d}}\\).",
+      "template_latex": "Find the missing number: \\(\\frac{{a}}{{b}}=\\frac{\\square}{{d}}\\).",
+      "answer_formula": "a*k",
+      "answer_rule": "a*k",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 10
+        }
+      },
+      "derived_variables": {
+        "d": "b*k"
+      },
+      "constraints": [
+        "a < b"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "constraint_filtering"
+      ],
+      "explanation": "The denominator was multiplied by k. Multiply the numerator by k too.",
+      "diagram": null,
+      "validation_identity": "a*d == b*(a*k)",
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "Compare exact values; do not round.",
+      "example": {
+        "variables": {
+          "a": "3",
+          "b": "4",
+          "k": "5",
+          "d": "20"
+        },
+        "question_latex": "Find the missing number: \\(\\frac{3}{4}=\\frac{\\square}{20}\\).",
+        "answer": "15",
+        "answer_latex": "15",
+        "exact_answer": {
+          "numerator": "15",
+          "denominator": "1"
+        }
+      },
+      "numeric_form_compatible": false
+    },
+    {
+      "id": "EF02",
+      "label": "Missing denominator: multiply",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "Find the missing number: \\(\\frac{{a}}{{b}}=\\frac{{c}}{\\square}\\).",
+      "template_latex": "Find the missing number: \\(\\frac{{a}}{{b}}=\\frac{{c}}{\\square}\\).",
+      "answer_formula": "b*k",
+      "answer_rule": "b*k",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 10
+        }
+      },
+      "derived_variables": {
+        "c": "a*k"
+      },
+      "constraints": [
+        "a < b"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "constraint_filtering"
+      ],
+      "explanation": "The numerator was multiplied by k. Multiply the denominator by k too.",
+      "diagram": null,
+      "validation_identity": "a*(b*k) == b*c",
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "Compare exact values; do not round.",
+      "example": {
+        "variables": {
+          "a": "2",
+          "b": "3",
+          "k": "4",
+          "c": "8"
+        },
+        "question_latex": "Find the missing number: \\(\\frac{2}{3}=\\frac{8}{\\square}\\).",
+        "answer": "12",
+        "answer_latex": "12",
+        "exact_answer": {
+          "numerator": "12",
+          "denominator": "1"
+        }
+      },
+      "numeric_form_compatible": false
+    },
+    {
+      "id": "EF03",
+      "label": "Missing numerator: divide",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "Find the missing number: \\(\\frac{{c}}{{d}}=\\frac{\\square}{{b}}\\).",
+      "template_latex": "Find the missing number: \\(\\frac{{c}}{{d}}=\\frac{\\square}{{b}}\\).",
+      "answer_formula": "a",
+      "answer_rule": "a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 10
+        }
+      },
+      "derived_variables": {
+        "c": "a*k",
+        "d": "b*k"
+      },
+      "constraints": [
+        "a < b"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "constraint_filtering"
+      ],
+      "explanation": "The denominator was divided by k. Divide the numerator by k too.",
+      "diagram": null,
+      "validation_identity": "c*b == d*a",
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "Compare exact values; do not round.",
+      "example": {
+        "variables": {
+          "a": "3",
+          "b": "5",
+          "k": "4",
+          "c": "12",
+          "d": "20"
+        },
+        "question_latex": "Find the missing number: \\(\\frac{12}{20}=\\frac{\\square}{5}\\).",
+        "answer": "3",
+        "answer_latex": "3",
+        "exact_answer": {
+          "numerator": "3",
+          "denominator": "1"
+        }
+      },
+      "numeric_form_compatible": false
+    },
+    {
+      "id": "EF04",
+      "label": "Missing denominator: divide",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "Find the missing number: \\(\\frac{{c}}{{d}}=\\frac{{a}}{\\square}\\).",
+      "template_latex": "Find the missing number: \\(\\frac{{c}}{{d}}=\\frac{{a}}{\\square}\\).",
+      "answer_formula": "b",
+      "answer_rule": "b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 10
+        }
+      },
+      "derived_variables": {
+        "c": "a*k",
+        "d": "b*k"
+      },
+      "constraints": [
+        "a < b"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "constraint_filtering"
+      ],
+      "explanation": "The numerator was divided by k. Divide the denominator by k too.",
+      "diagram": null,
+      "validation_identity": "c*b == d*a",
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "Compare exact values; do not round.",
+      "example": {
+        "variables": {
+          "a": "4",
+          "b": "7",
+          "k": "3",
+          "c": "12",
+          "d": "21"
+        },
+        "question_latex": "Find the missing number: \\(\\frac{12}{21}=\\frac{4}{\\square}\\).",
+        "answer": "7",
+        "answer_latex": "7",
+        "exact_answer": {
+          "numerator": "7",
+          "denominator": "1"
+        }
+      },
+      "numeric_form_compatible": false
+    },
+    {
+      "id": "EF05",
+      "label": "Numerator in lowest terms",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "Reduce \\(\\frac{{c}}{{d}}\\) to lowest terms. Enter only its numerator.",
+      "template_latex": "Reduce \\(\\frac{{c}}{{d}}\\) to lowest terms. Enter only its numerator.",
+      "answer_formula": "a",
+      "answer_rule": "a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 10
+        }
+      },
+      "derived_variables": {
+        "c": "a*k",
+        "d": "b*k"
+      },
+      "constraints": [
+        "a < b",
+        "gcd(a,b) == 1"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "gcd",
+        "constraint_filtering"
+      ],
+      "explanation": "Divide both terms by their greatest common divisor, k.",
+      "diagram": null,
+      "validation_identity": "gcd(c,d) == k",
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "Compare exact values; do not round.",
+      "example": {
+        "variables": {
+          "a": "3",
+          "b": "8",
+          "k": "4",
+          "c": "12",
+          "d": "32"
+        },
+        "question_latex": "Reduce \\(\\frac{12}{32}\\) to lowest terms. Enter only its numerator.",
+        "answer": "3",
+        "answer_latex": "3",
+        "exact_answer": {
+          "numerator": "3",
+          "denominator": "1"
+        }
+      },
+      "numeric_form_compatible": false
+    },
+    {
+      "id": "EF06",
+      "label": "Denominator in lowest terms",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "Reduce \\(\\frac{{c}}{{d}}\\) to lowest terms. Enter only its denominator.",
+      "template_latex": "Reduce \\(\\frac{{c}}{{d}}\\) to lowest terms. Enter only its denominator.",
+      "answer_formula": "b",
+      "answer_rule": "b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 10
+        }
+      },
+      "derived_variables": {
+        "c": "a*k",
+        "d": "b*k"
+      },
+      "constraints": [
+        "a < b",
+        "gcd(a,b) == 1"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "gcd",
+        "constraint_filtering"
+      ],
+      "explanation": "Divide both terms by their greatest common divisor, k.",
+      "diagram": null,
+      "validation_identity": "gcd(c,d) == k",
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "Compare exact values; do not round.",
+      "example": {
+        "variables": {
+          "a": "5",
+          "b": "6",
+          "k": "3",
+          "c": "15",
+          "d": "18"
+        },
+        "question_latex": "Reduce \\(\\frac{15}{18}\\) to lowest terms. Enter only its denominator.",
+        "answer": "6",
+        "answer_latex": "6",
+        "exact_answer": {
+          "numerator": "6",
+          "denominator": "1"
+        }
+      },
+      "numeric_form_compatible": false
+    },
+    {
+      "id": "EF07",
+      "label": "Simplify a proper fraction",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "Write \\(\\frac{{c}}{{d}}\\) as an equivalent fraction in lowest terms.",
+      "template_latex": "Write \\(\\frac{{c}}{{d}}\\) as an equivalent fraction in lowest terms.",
+      "answer_formula": "a/b",
+      "answer_rule": "a/b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 10
+        }
+      },
+      "derived_variables": {
+        "c": "a*k",
+        "d": "b*k"
+      },
+      "constraints": [
+        "a < b",
+        "gcd(a,b) == 1"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "gcd",
+        "reduced_fraction_grading",
+        "constraint_filtering"
+      ],
+      "explanation": "Divide the numerator and denominator by k. The resulting terms are coprime.",
+      "diagram": null,
+      "validation_identity": "c*b == d*a",
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "Require a fraction n/d with integer terms, d > 0 and gcd(abs(n),d) == 1; then compare its exact value with a/b.",
+      "example": {
+        "variables": {
+          "a": "2",
+          "b": "3",
+          "k": "6",
+          "c": "12",
+          "d": "18"
+        },
+        "question_latex": "Write \\(\\frac{12}{18}\\) as an equivalent fraction in lowest terms.",
+        "answer": "2/3",
+        "answer_latex": "\\frac{2}{3}",
+        "exact_answer": {
+          "numerator": "2",
+          "denominator": "3"
+        }
+      },
+      "numeric_form_compatible": false
+    },
+    {
+      "id": "EF08",
+      "label": "Simplify an improper fraction",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "Write \\(\\frac{{c}}{{d}}\\) as an equivalent improper fraction in lowest terms.",
+      "template_latex": "Write \\(\\frac{{c}}{{d}}\\) as an equivalent improper fraction in lowest terms.",
+      "answer_formula": "a/b",
+      "answer_rule": "a/b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 3,
+          "max": 25
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 8
+        }
+      },
+      "derived_variables": {
+        "c": "a*k",
+        "d": "b*k"
+      },
+      "constraints": [
+        "a > b",
+        "gcd(a,b) == 1"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "gcd",
+        "reduced_fraction_grading",
+        "constraint_filtering"
+      ],
+      "explanation": "Divide both terms by k; keep the answer as an improper fraction.",
+      "diagram": null,
+      "validation_identity": "c*b == d*a",
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "Require a reduced improper fraction n/d with integer terms, n > d > 0 and gcd(n,d) == 1; compare its exact value with a/b. Do not accept mixed-number notation.",
+      "example": {
+        "variables": {
+          "a": "7",
+          "b": "3",
+          "k": "4",
+          "c": "28",
+          "d": "12"
+        },
+        "question_latex": "Write \\(\\frac{28}{12}\\) as an equivalent improper fraction in lowest terms.",
+        "answer": "7/3",
+        "answer_latex": "\\frac{7}{3}",
+        "exact_answer": {
+          "numerator": "7",
+          "denominator": "3"
+        }
+      },
+      "numeric_form_compatible": false
+    },
+    {
+      "id": "EF09",
+      "label": "Find the common scale factor",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "What number multiplies BOTH terms of \\(\\frac{{a}}{{b}}\\) to produce \\(\\frac{{c}}{{d}}\\)?",
+      "template_latex": "What number multiplies BOTH terms of \\(\\frac{{a}}{{b}}\\) to produce \\(\\frac{{c}}{{d}}\\)?",
+      "answer_formula": "k",
+      "answer_rule": "k",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 10
+        }
+      },
+      "derived_variables": {
+        "c": "a*k",
+        "d": "b*k"
+      },
+      "constraints": [
+        "a < b"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "constraint_filtering"
+      ],
+      "explanation": "Divide either new term by its corresponding original term.",
+      "diagram": null,
+      "validation_identity": "c/a == d/b",
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "Compare exact values; do not round.",
+      "example": {
+        "variables": {
+          "a": "3",
+          "b": "7",
+          "k": "5",
+          "c": "15",
+          "d": "35"
+        },
+        "question_latex": "What number multiplies BOTH terms of \\(\\frac{3}{7}\\) to produce \\(\\frac{15}{35}\\)?",
+        "answer": "5",
+        "answer_latex": "5",
+        "exact_answer": {
+          "numerator": "5",
+          "denominator": "1"
+        }
+      },
+      "numeric_form_compatible": false
+    },
+    {
+      "id": "EF10",
+      "label": "Equivalent fractions: measuring cups",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "A recipe needs \\(\\frac{{a}}{{b}}\\) cup of milk. Your measuring cup holds \\(\\frac{1}{{d}}\\) cup. How many full measures do you need?",
+      "template_latex": "A recipe needs \\(\\frac{{a}}{{b}}\\) cup of milk. Your measuring cup holds \\(\\frac{1}{{d}}\\) cup. How many full measures do you need?",
+      "answer_formula": "a*k",
+      "answer_rule": "a*k",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 10
+        }
+      },
+      "derived_variables": {
+        "d": "b*k"
+      },
+      "constraints": [
+        "a < b"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "constraint_filtering"
+      ],
+      "explanation": "Rewrite a/b as (a*k)/(b*k). Each full measure is 1/(b*k) cup.",
+      "diagram": null,
+      "validation_identity": "(a*k)/d == a/b",
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "Compare exact values; do not round.",
+      "example": {
+        "variables": {
+          "a": "1",
+          "b": "2",
+          "k": "2",
+          "d": "4"
+        },
+        "question_latex": "A recipe needs \\(\\frac{1}{2}\\) cup of milk. Your measuring cup holds \\(\\frac{1}{4}\\) cup. How many full measures do you need?",
+        "answer": "2",
+        "answer_latex": "2",
+        "exact_answer": {
+          "numerator": "2",
+          "denominator": "1"
+        }
+      },
+      "numeric_form_compatible": false
+    },
+    {
+      "id": "EF11",
+      "label": "Compare fractions or identify equivalence",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "Compare A: \\(\\frac{{a}}{{b}}\\) and B: \\(\\frac{{c}}{{d}}\\). Answer A if the first is greater, B if the second is greater, or equal if they are equivalent.",
+      "template_latex": "Compare A: \\(\\frac{{a}}{{b}}\\) and B: \\(\\frac{{c}}{{d}}\\). Answer A if the first is greater, B if the second is greater, or equal if they are equivalent.",
+      "answer_formula": null,
+      "answer_rule": "compare(a/b,c/d)",
+      "answer_latex_template": null,
+      "answer_mode": "category",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 12
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "c": {
+          "type": "integer",
+          "min": 1,
+          "max": 12
+        },
+        "d": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        }
+      },
+      "derived_variables": {},
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "category_grading"
+      ],
+      "explanation": "Because both denominators are positive, compare a*d and b*c. Matching products mean equivalent fractions.",
+      "diagram": null,
+      "validation_identity": null,
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "compare(left,right) returns A when left > right, B when left < right, and equal otherwise. Trim whitespace and ignore letter case when comparing labels.",
+      "example": {
+        "variables": {
+          "a": "2",
+          "b": "3",
+          "c": "4",
+          "d": "6"
+        },
+        "question_latex": "Compare A: \\(\\frac{2}{3}\\) and B: \\(\\frac{4}{6}\\). Answer A if the first is greater, B if the second is greater, or equal if they are equivalent.",
+        "answer": "equal",
+        "answer_latex": "\\text{equal}"
+      },
+      "numeric_form_compatible": false
+    },
+    {
+      "id": "EF12",
+      "label": "Simplify a negative fraction",
+      "category": "Equivalent fractions",
+      "subject": "Math",
+      "active": true,
+      "ged_targets": [],
+      "template": "Write \\(-\\frac{{c}}{{d}}\\) as an equivalent fraction in lowest terms.",
+      "template_latex": "Write \\(-\\frac{{c}}{{d}}\\) as an equivalent fraction in lowest terms.",
+      "answer_formula": "-a/b",
+      "answer_rule": "-a/b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 12,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 10
+        }
+      },
+      "derived_variables": {
+        "c": "a*k",
+        "d": "b*k"
+      },
+      "constraints": [
+        "a < b",
+        "gcd(a,b) == 1"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables",
+        "gcd",
+        "reduced_fraction_grading",
+        "constraint_filtering"
+      ],
+      "explanation": "Divide both terms by k and keep the negative sign in the numerator.",
+      "diagram": null,
+      "validation_identity": "(-c)*b == d*(-a)",
+      "domain_restrictions": [
+        "All denominators are positive."
+      ],
+      "grading_requirements": "Require a reduced fraction n/d with integer terms, n < 0, d > 0 and gcd(abs(n),d) == 1; compare its exact value with -a/b.",
+      "example": {
+        "variables": {
+          "a": "3",
+          "b": "4",
+          "k": "3",
+          "c": "9",
+          "d": "12"
+        },
+        "question_latex": "Write \\(-\\frac{9}{12}\\) as an equivalent fraction in lowest terms.",
+        "answer": "-3/4",
+        "answer_latex": "\\frac{-3}{4}",
+        "exact_answer": {
+          "numerator": "-3",
+          "denominator": "4"
+        }
+      },
+      "numeric_form_compatible": false
+    }
+  ]
+}

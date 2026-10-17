@@ -1,0 +1,1988 @@
+{
+  "schema_version": "1.0",
+  "title": "One-Step Equations",
+  "subject_path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+  "note": "Import with POST /api/admin/math-templates/import?subject=Solve-Easy-Equations . Every template's category is One-Step-Equations. Subject names are unique, so the existing Solve-Easy-Equations and One-Step-Equations folders are reused when they already exist.",
+  "templates": [
+    {
+      "id": "OSE01",
+      "label": "Solve x + a = b",
+      "category": "One-Step-Equations",
+      "group": "Addition and subtraction",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(x + {a} = {b}\\)",
+      "template_latex": "Solve for \\(x\\): \\(x + {a} = {b}\\)",
+      "answer_formula": "b - a",
+      "answer_rule": "b - a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": -20,
+          "max": 20
+        },
+        "a": {
+          "type": "integer",
+          "min": -20,
+          "max": 20,
+          "exclude": [
+            0
+          ]
+        }
+      },
+      "derived_variables": {
+        "b": "k + a"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Undo the addition: subtract a from both sides, so x = b − a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "2",
+          "k": "13",
+          "b": "15"
+        },
+        "question_latex": "Solve for \\(x\\): \\(x + 2 = 15\\)",
+        "answer": "13",
+        "exact_answer": {
+          "numerator": "13",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE02",
+      "label": "Solve x − a = b",
+      "category": "One-Step-Equations",
+      "group": "Addition and subtraction",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(x - {a} = {b}\\)",
+      "template_latex": "Solve for \\(x\\): \\(x - {a} = {b}\\)",
+      "answer_formula": "b + a",
+      "answer_rule": "b + a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": -20,
+          "max": 20
+        },
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 20
+        }
+      },
+      "derived_variables": {
+        "b": "k - a"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Undo the subtraction: add a to both sides, so x = b + a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "7",
+          "k": "2",
+          "b": "-5"
+        },
+        "question_latex": "Solve for \\(x\\): \\(x - 7 = -5\\)",
+        "answer": "2",
+        "exact_answer": {
+          "numerator": "2",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE03",
+      "label": "Solve a + x = b",
+      "category": "One-Step-Equations",
+      "group": "Addition and subtraction",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\({a} + x = {b}\\)",
+      "template_latex": "Solve for \\(x\\): \\({a} + x = {b}\\)",
+      "answer_formula": "b - a",
+      "answer_rule": "b - a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": -20,
+          "max": 20
+        },
+        "a": {
+          "type": "integer",
+          "min": -20,
+          "max": 20,
+          "exclude": [
+            0
+          ]
+        }
+      },
+      "derived_variables": {
+        "b": "a + k"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Subtract a from both sides, so x = b − a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "12",
+          "k": "-11",
+          "b": "1"
+        },
+        "question_latex": "Solve for \\(x\\): \\(12 + x = 1\\)",
+        "answer": "-11",
+        "exact_answer": {
+          "numerator": "-11",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE04",
+      "label": "Solve b = x + a (variable on the right)",
+      "category": "One-Step-Equations",
+      "group": "Addition and subtraction",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\({b} = x + {a}\\)",
+      "template_latex": "Solve for \\(x\\): \\({b} = x + {a}\\)",
+      "answer_formula": "b - a",
+      "answer_rule": "b - a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": -20,
+          "max": 20
+        },
+        "a": {
+          "type": "integer",
+          "min": -20,
+          "max": 20,
+          "exclude": [
+            0
+          ]
+        }
+      },
+      "derived_variables": {
+        "b": "k + a"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Subtract a from both sides, so x = b − a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "-8",
+          "k": "3",
+          "b": "-5"
+        },
+        "question_latex": "Solve for \\(x\\): \\(-5 = x - 8\\)",
+        "answer": "3",
+        "exact_answer": {
+          "numerator": "3",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE05",
+      "label": "Solve x + (−a) = b",
+      "category": "One-Step-Equations",
+      "group": "Addition and subtraction",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(x + (-{a}) = {b}\\)",
+      "template_latex": "Solve for \\(x\\): \\(x + (-{a}) = {b}\\)",
+      "answer_formula": "b + a",
+      "answer_rule": "b + a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": -20,
+          "max": 20
+        },
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 20
+        }
+      },
+      "derived_variables": {
+        "b": "k - a"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Adding −a is the same as subtracting a. Add a to both sides, so x = b + a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "19",
+          "k": "8",
+          "b": "-11"
+        },
+        "question_latex": "Solve for \\(x\\): \\(x + (-19) = -11\\)",
+        "answer": "8",
+        "exact_answer": {
+          "numerator": "8",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE06",
+      "label": "Solve x − (−a) = b",
+      "category": "One-Step-Equations",
+      "group": "Addition and subtraction",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(x - (-{a}) = {b}\\)",
+      "template_latex": "Solve for \\(x\\): \\(x - (-{a}) = {b}\\)",
+      "answer_formula": "b - a",
+      "answer_rule": "b - a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": -20,
+          "max": 20
+        },
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 20
+        }
+      },
+      "derived_variables": {
+        "b": "k + a"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Subtracting −a is the same as adding a. Subtract a from both sides, so x = b − a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "5",
+          "k": "-3",
+          "b": "2"
+        },
+        "question_latex": "Solve for \\(x\\): \\(x - (-5) = 2\\)",
+        "answer": "-3",
+        "exact_answer": {
+          "numerator": "-3",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE07",
+      "label": "Solve x + a = b with decimals",
+      "category": "One-Step-Equations",
+      "group": "Addition and subtraction",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(x + {a} = {b}\\)",
+      "template_latex": "Solve for \\(x\\): \\(x + {a} = {b}\\)",
+      "answer_formula": "b - a",
+      "answer_rule": "b - a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "decimal",
+          "min": -10,
+          "max": 10,
+          "scale": 1
+        },
+        "a": {
+          "type": "decimal",
+          "min": -9.9,
+          "max": 9.9,
+          "scale": 1,
+          "exclude": [
+            0
+          ]
+        }
+      },
+      "derived_variables": {
+        "b": "k + a"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Subtract a from both sides and line up the decimal points: x = b − a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "-9",
+          "k": "5.3",
+          "b": "-3.7"
+        },
+        "question_latex": "Solve for \\(x\\): \\(x - 9 = -3.7\\)",
+        "answer": "5.3",
+        "exact_answer": {
+          "numerator": "53",
+          "denominator": "10"
+        }
+      }
+    },
+    {
+      "id": "OSE08",
+      "label": "Solve ax = b",
+      "category": "One-Step-Equations",
+      "group": "Multiplication and division",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\({a}x = {b}\\)",
+      "template_latex": "Solve for \\(x\\): \\({a}x = {b}\\)",
+      "answer_formula": "b / a",
+      "answer_rule": "b / a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": -12,
+          "max": 12,
+          "exclude": [
+            0
+          ]
+        },
+        "a": {
+          "type": "integer",
+          "min": -12,
+          "max": 12,
+          "exclude": [
+            -1,
+            0,
+            1
+          ]
+        }
+      },
+      "derived_variables": {
+        "b": "a * k"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Undo the multiplication: divide both sides by a, so x = b ÷ a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "8",
+          "k": "-5",
+          "b": "-40"
+        },
+        "question_latex": "Solve for \\(x\\): \\(8x = -40\\)",
+        "answer": "-5",
+        "exact_answer": {
+          "numerator": "-5",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE09",
+      "label": "Solve x/a = b",
+      "category": "One-Step-Equations",
+      "group": "Multiplication and division",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(\\frac{x}{{a}} = {b}\\)",
+      "template_latex": "Solve for \\(x\\): \\(\\frac{x}{{a}} = {b}\\)",
+      "answer_formula": "a * b",
+      "answer_rule": "a * b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": -12,
+          "max": 12,
+          "exclude": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "b": {
+          "type": "integer",
+          "min": -12,
+          "max": 12,
+          "exclude": [
+            0
+          ]
+        }
+      },
+      "derived_variables": {},
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "Undo the division: multiply both sides by a, so x = a · b.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "-5",
+          "b": "-12"
+        },
+        "question_latex": "Solve for \\(x\\): \\(\\frac{x}{-5} = -12\\)",
+        "answer": "60",
+        "exact_answer": {
+          "numerator": "60",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE10",
+      "label": "Solve −x = b",
+      "category": "One-Step-Equations",
+      "group": "Multiplication and division",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(-x = {b}\\)",
+      "template_latex": "Solve for \\(x\\): \\(-x = {b}\\)",
+      "answer_formula": "-b",
+      "answer_rule": "-b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "b": {
+          "type": "integer",
+          "min": -25,
+          "max": 25,
+          "exclude": [
+            0
+          ]
+        }
+      },
+      "derived_variables": {},
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "−x means −1 · x. Divide (or multiply) both sides by −1, so x = −b.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "b": "12"
+        },
+        "question_latex": "Solve for \\(x\\): \\(-x = 12\\)",
+        "answer": "-12",
+        "exact_answer": {
+          "numerator": "-12",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE11",
+      "label": "Solve ax = b (fraction answer)",
+      "category": "One-Step-Equations",
+      "group": "Multiplication and division",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\({a}x = {b}\\) Write your answer as a fraction in simplest form or as a decimal.",
+      "template_latex": "Solve for \\(x\\): \\({a}x = {b}\\) Write your answer as a fraction in simplest form or as a decimal.",
+      "answer_formula": "b / a",
+      "answer_rule": "b / a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "b": {
+          "type": "integer",
+          "min": -30,
+          "max": 30,
+          "exclude": [
+            0
+          ]
+        }
+      },
+      "derived_variables": {},
+      "constraints": [
+        "b % a != 0"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "Divide both sides by a. The quotient is not a whole number, so write x = b/a in lowest terms.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "8",
+          "b": "-17"
+        },
+        "question_latex": "Solve for \\(x\\): \\(8x = -17\\) Write your answer as a fraction in simplest form or as a decimal.",
+        "answer": "-2.125",
+        "exact_answer": {
+          "numerator": "-17",
+          "denominator": "8"
+        }
+      }
+    },
+    {
+      "id": "OSE12",
+      "label": "Solve ax = b with a decimal coefficient",
+      "category": "One-Step-Equations",
+      "group": "Multiplication and division",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\({a}x = {b}\\)",
+      "template_latex": "Solve for \\(x\\): \\({a}x = {b}\\)",
+      "answer_formula": "b / a",
+      "answer_rule": "b / a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "decimal",
+          "min": 0.2,
+          "max": 2.5,
+          "scale": 1,
+          "exclude": [
+            1
+          ]
+        },
+        "k": {
+          "type": "integer",
+          "min": 1,
+          "max": 20
+        }
+      },
+      "derived_variables": {
+        "b": "a * k"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Divide both sides by the decimal a, so x = b ÷ a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "0.4",
+          "k": "16",
+          "b": "6.4"
+        },
+        "question_latex": "Solve for \\(x\\): \\(0.4x = 6.4\\)",
+        "answer": "16",
+        "exact_answer": {
+          "numerator": "16",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE13",
+      "label": "Solve ax − b = c",
+      "category": "One-Step-Equations",
+      "group": "Two-step equations",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\({a}x - {b} = {c}\\)",
+      "template_latex": "Solve for \\(x\\): \\({a}x - {b} = {c}\\)",
+      "answer_formula": "(c + b) / a",
+      "answer_rule": "(c + b) / a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": -10,
+          "max": 10
+        },
+        "a": {
+          "type": "integer",
+          "min": 2,
+          "max": 9
+        },
+        "b": {
+          "type": "integer",
+          "min": 1,
+          "max": 20
+        }
+      },
+      "derived_variables": {
+        "c": "a * k - b"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "First add b to both sides (ax = c + b), then divide by a: x = (c + b) ÷ a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "5",
+          "b": "6",
+          "k": "2",
+          "c": "4"
+        },
+        "question_latex": "Solve for \\(x\\): \\(5x - 6 = 4\\)",
+        "answer": "2",
+        "exact_answer": {
+          "numerator": "2",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE14",
+      "label": "Solve ax + b = c",
+      "category": "One-Step-Equations",
+      "group": "Two-step equations",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\({a}x + {b} = {c}\\)",
+      "template_latex": "Solve for \\(x\\): \\({a}x + {b} = {c}\\)",
+      "answer_formula": "(c - b) / a",
+      "answer_rule": "(c - b) / a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": -10,
+          "max": 10
+        },
+        "a": {
+          "type": "integer",
+          "min": -9,
+          "max": 9,
+          "exclude": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "b": {
+          "type": "integer",
+          "min": -20,
+          "max": 20,
+          "exclude": [
+            0
+          ]
+        }
+      },
+      "derived_variables": {
+        "c": "a * k + b"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "First subtract b from both sides (ax = c − b), then divide by a: x = (c − b) ÷ a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "-6",
+          "b": "-19",
+          "k": "-9",
+          "c": "35"
+        },
+        "question_latex": "Solve for \\(x\\): \\(-6x - 19 = 35\\)",
+        "answer": "-9",
+        "exact_answer": {
+          "numerator": "-9",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE15",
+      "label": "Solve x/a + b = c",
+      "category": "One-Step-Equations",
+      "group": "Two-step equations",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(\\frac{x}{{a}} + {b} = {c}\\)",
+      "template_latex": "Solve for \\(x\\): \\(\\frac{x}{{a}} + {b} = {c}\\)",
+      "answer_formula": "a * (c - b)",
+      "answer_rule": "a * (c - b)",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "m": {
+          "type": "integer",
+          "min": -10,
+          "max": 10
+        },
+        "a": {
+          "type": "integer",
+          "min": 2,
+          "max": 9
+        },
+        "b": {
+          "type": "integer",
+          "min": -15,
+          "max": 15,
+          "exclude": [
+            0
+          ]
+        }
+      },
+      "derived_variables": {
+        "c": "m + b"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "First subtract b from both sides (x/a = c − b), then multiply by a: x = a(c − b).",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "5",
+          "b": "1",
+          "m": "-6",
+          "c": "-5"
+        },
+        "question_latex": "Solve for \\(x\\): \\(\\frac{x}{5} + 1 = -5\\)",
+        "answer": "-30",
+        "exact_answer": {
+          "numerator": "-30",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE16",
+      "label": "Solve x/a = b/c (whole-number answer)",
+      "category": "One-Step-Equations",
+      "group": "Fractions and proportions",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(\\frac{x}{{a}} = \\frac{{b}}{{c}}\\)",
+      "template_latex": "Solve for \\(x\\): \\(\\frac{x}{{a}} = \\frac{{b}}{{c}}\\)",
+      "answer_formula": "a * b / c",
+      "answer_rule": "a * b / c",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 2,
+          "max": 24
+        },
+        "b": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "c": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        }
+      },
+      "derived_variables": {},
+      "constraints": [
+        "gcd(b, c) == 1",
+        "(a * b) % c == 0"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "Multiply both sides by a (or cross-multiply: c·x = a·b), so x = a·b ÷ c.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "10",
+          "b": "6",
+          "c": "5"
+        },
+        "question_latex": "Solve for \\(x\\): \\(\\frac{x}{10} = \\frac{6}{5}\\)",
+        "answer": "12",
+        "exact_answer": {
+          "numerator": "12",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE17",
+      "label": "Solve x/a = b/c (fraction answer)",
+      "category": "One-Step-Equations",
+      "group": "Fractions and proportions",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(\\frac{x}{{a}} = \\frac{{b}}{{c}}\\) Write your answer as a fraction in simplest form or as a decimal.",
+      "template_latex": "Solve for \\(x\\): \\(\\frac{x}{{a}} = \\frac{{b}}{{c}}\\) Write your answer as a fraction in simplest form or as a decimal.",
+      "answer_formula": "a * b / c",
+      "answer_rule": "a * b / c",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "b": {
+          "type": "integer",
+          "min": 1,
+          "max": 11
+        },
+        "c": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        }
+      },
+      "derived_variables": {},
+      "constraints": [
+        "gcd(b, c) == 1",
+        "(a * b) % c != 0"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "Multiply both sides by a: x = a·b/c, then simplify the fraction.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "4",
+          "b": "9",
+          "c": "11"
+        },
+        "question_latex": "Solve for \\(x\\): \\(\\frac{x}{4} = \\frac{9}{11}\\) Write your answer as a fraction in simplest form or as a decimal.",
+        "answer": "36/11",
+        "exact_answer": {
+          "numerator": "36",
+          "denominator": "11"
+        }
+      }
+    },
+    {
+      "id": "OSE18",
+      "label": "Solve a/x = b/c",
+      "category": "One-Step-Equations",
+      "group": "Fractions and proportions",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(\\frac{{a}}{x} = \\frac{{b}}{{c}}\\)",
+      "template_latex": "Solve for \\(x\\): \\(\\frac{{a}}{x} = \\frac{{b}}{{c}}\\)",
+      "answer_formula": "a * c / b",
+      "answer_rule": "a * c / b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 20
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 9
+        },
+        "c": {
+          "type": "integer",
+          "min": 1,
+          "max": 12
+        }
+      },
+      "derived_variables": {},
+      "constraints": [
+        "gcd(b, c) == 1",
+        "(a * c) % b == 0",
+        "b != c"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "Cross-multiply: b·x = a·c, then divide by b, so x = a·c ÷ b.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "6",
+          "b": "6",
+          "c": "5"
+        },
+        "question_latex": "Solve for \\(x\\): \\(\\frac{6}{x} = \\frac{6}{5}\\)",
+        "answer": "5",
+        "exact_answer": {
+          "numerator": "5",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE19",
+      "label": "Solve (a/b)x = c",
+      "category": "One-Step-Equations",
+      "group": "Fractions and proportions",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(\\frac{{a}}{{b}}x = {c}\\)",
+      "template_latex": "Solve for \\(x\\): \\(\\frac{{a}}{{b}}x = {c}\\)",
+      "answer_formula": "c * b / a",
+      "answer_rule": "c * b / a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 2,
+          "max": 9
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 9
+        },
+        "c": {
+          "type": "integer",
+          "min": -30,
+          "max": 30,
+          "exclude": [
+            0
+          ]
+        }
+      },
+      "derived_variables": {},
+      "constraints": [
+        "gcd(a, b) == 1",
+        "(c * b) % a == 0"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "Multiply both sides by the reciprocal b/a, so x = c · b/a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "3",
+          "b": "7",
+          "c": "18"
+        },
+        "question_latex": "Solve for \\(x\\): \\(\\frac{3}{7}x = 18\\)",
+        "answer": "42",
+        "exact_answer": {
+          "numerator": "42",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE20",
+      "label": "Solve x + a/b = c/d",
+      "category": "One-Step-Equations",
+      "group": "Fractions and proportions",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Solve for \\(x\\): \\(x + \\frac{{a}}{{b}} = \\frac{{c}}{{d}}\\) Write your answer as a fraction in simplest form or as a decimal.",
+      "template_latex": "Solve for \\(x\\): \\(x + \\frac{{a}}{{b}} = \\frac{{c}}{{d}}\\) Write your answer as a fraction in simplest form or as a decimal.",
+      "answer_formula": "c / d - a / b",
+      "answer_rule": "c / d - a / b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 9
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 9
+        },
+        "c": {
+          "type": "integer",
+          "min": 1,
+          "max": 9
+        },
+        "d": {
+          "type": "integer",
+          "min": 2,
+          "max": 9
+        }
+      },
+      "derived_variables": {},
+      "constraints": [
+        "gcd(a, b) == 1",
+        "gcd(c, d) == 1",
+        "b != d"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "Subtract a/b from both sides with a common denominator: x = c/d − a/b.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "1",
+          "b": "4",
+          "c": "9",
+          "d": "7"
+        },
+        "question_latex": "Solve for \\(x\\): \\(x + \\frac{1}{4} = \\frac{9}{7}\\) Write your answer as a fraction in simplest form or as a decimal.",
+        "answer": "29/28",
+        "exact_answer": {
+          "numerator": "29",
+          "denominator": "28"
+        }
+      }
+    },
+    {
+      "id": "OSE21",
+      "label": "Word problem: age difference (x + a = b)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "Tom is {a} years older than his sister Mia. Tom is {b} years old. Write an equation and solve it to find Mia's age.",
+      "template_latex": "Tom is {a} years older than his sister Mia. Tom is {b} years old. Write an equation and solve it to find Mia's age.",
+      "answer_formula": "b - a",
+      "answer_rule": "b - a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": 3,
+          "max": 40
+        },
+        "a": {
+          "type": "integer",
+          "min": 2,
+          "max": 15
+        }
+      },
+      "derived_variables": {
+        "b": "k + a"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Let x be Mia's age. Then x + a = b, so x = b − a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "4",
+          "k": "16",
+          "b": "20"
+        },
+        "question_latex": "Tom is 4 years older than his sister Mia. Tom is 20 years old. Write an equation and solve it to find Mia's age.",
+        "answer": "16",
+        "exact_answer": {
+          "numerator": "16",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE22",
+      "label": "Word problem: money spent (x − a = b)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "After spending \\(\\${a}\\) on a jacket, Ana has \\(\\${b}\\) left. How many dollars did she have before buying the jacket?",
+      "template_latex": "After spending \\(\\${a}\\) on a jacket, Ana has \\(\\${b}\\) left. How many dollars did she have before buying the jacket?",
+      "answer_formula": "b + a",
+      "answer_rule": "b + a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": 40,
+          "max": 200
+        },
+        "a": {
+          "type": "integer",
+          "min": 10,
+          "max": 120
+        }
+      },
+      "derived_variables": {
+        "b": "k - a"
+      },
+      "constraints": [
+        "a < k"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Let x be the starting amount. Then x − a = b, so x = b + a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "23",
+          "k": "159",
+          "b": "136"
+        },
+        "question_latex": "After spending \\(\\$23\\) on a jacket, Ana has \\(\\$136\\) left. How many dollars did she have before buying the jacket?",
+        "answer": "159",
+        "exact_answer": {
+          "numerator": "159",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE23",
+      "label": "Word problem: temperature drop (x − a = b)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "The temperature dropped {a}\\(^\\circ\\)F overnight. In the morning it was {b}\\(^\\circ\\)F. What was the temperature the evening before, in \\(^\\circ\\)F?",
+      "template_latex": "The temperature dropped {a}\\(^\\circ\\)F overnight. In the morning it was {b}\\(^\\circ\\)F. What was the temperature the evening before, in \\(^\\circ\\)F?",
+      "answer_formula": "b + a",
+      "answer_rule": "b + a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": -10,
+          "max": 50
+        },
+        "a": {
+          "type": "integer",
+          "min": 3,
+          "max": 25
+        }
+      },
+      "derived_variables": {
+        "b": "k - a"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Let x be the evening temperature. Then x − a = b, so x = b + a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "5",
+          "k": "20",
+          "b": "15"
+        },
+        "question_latex": "The temperature dropped 5\\(^\\circ\\)F overnight. In the morning it was 15\\(^\\circ\\)F. What was the temperature the evening before, in \\(^\\circ\\)F?",
+        "answer": "20",
+        "exact_answer": {
+          "numerator": "20",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE24",
+      "label": "Word problem: price of one item (ax = b)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "{a} movie tickets cost \\(\\${b}\\) in total. Each ticket costs the same. What is the price of one ticket, in dollars?",
+      "template_latex": "{a} movie tickets cost \\(\\${b}\\) in total. Each ticket costs the same. What is the price of one ticket, in dollars?",
+      "answer_formula": "b / a",
+      "answer_rule": "b / a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": 5,
+          "max": 25
+        },
+        "a": {
+          "type": "integer",
+          "min": 2,
+          "max": 9
+        }
+      },
+      "derived_variables": {
+        "b": "a * k"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Let x be the price of one ticket. Then a·x = b, so x = b ÷ a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "8",
+          "k": "6",
+          "b": "48"
+        },
+        "question_latex": "8 movie tickets cost \\(\\$48\\) in total. Each ticket costs the same. What is the price of one ticket, in dollars?",
+        "answer": "6",
+        "exact_answer": {
+          "numerator": "6",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE25",
+      "label": "Word problem: splitting a bill (x/a = b)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "{a} friends split a restaurant bill equally. Each friend pays \\(\\${b}\\). What was the total bill, in dollars?",
+      "template_latex": "{a} friends split a restaurant bill equally. Each friend pays \\(\\${b}\\). What was the total bill, in dollars?",
+      "answer_formula": "a * b",
+      "answer_rule": "a * b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 2,
+          "max": 8
+        },
+        "b": {
+          "type": "integer",
+          "min": 8,
+          "max": 40
+        }
+      },
+      "derived_variables": {},
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "Let x be the total bill. Then x/a = b, so x = a · b.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "5",
+          "b": "11"
+        },
+        "question_latex": "5 friends split a restaurant bill equally. Each friend pays \\(\\$11\\). What was the total bill, in dollars?",
+        "answer": "55",
+        "exact_answer": {
+          "numerator": "55",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE26",
+      "label": "Word problem: rectangle length (wx = A)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "A rectangle has an area of {A} square feet and a width of {w} feet. What is its length, in feet?",
+      "template_latex": "A rectangle has an area of {A} square feet and a width of {w} feet. What is its length, in feet?",
+      "answer_formula": "A / w",
+      "answer_rule": "A / w",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": 3,
+          "max": 20
+        },
+        "w": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        }
+      },
+      "derived_variables": {
+        "A": "w * k"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Area = length × width, so w·x = A and x = A ÷ w.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "w": "12",
+          "k": "7",
+          "A": "84"
+        },
+        "question_latex": "A rectangle has an area of 84 square feet and a width of 12 feet. What is its length, in feet?",
+        "answer": "7",
+        "exact_answer": {
+          "numerator": "7",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE27",
+      "label": "Word problem: constant speed (tx = d)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "A car travels {d} miles in {t} hours at a constant speed. What is its speed, in miles per hour?",
+      "template_latex": "A car travels {d} miles in {t} hours at a constant speed. What is its speed, in miles per hour?",
+      "answer_formula": "d / t",
+      "answer_rule": "d / t",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": 30,
+          "max": 70
+        },
+        "t": {
+          "type": "integer",
+          "min": 2,
+          "max": 8
+        }
+      },
+      "derived_variables": {
+        "d": "t * k"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Distance = speed × time, so t·x = d and x = d ÷ t.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "t": "4",
+          "k": "36",
+          "d": "144"
+        },
+        "question_latex": "A car travels 144 miles in 4 hours at a constant speed. What is its speed, in miles per hour?",
+        "answer": "36",
+        "exact_answer": {
+          "numerator": "36",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE28",
+      "label": "Word problem: recipe proportion (x/c = a/b)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "A recipe uses {a} cups of flour to make {b} muffins. How many cups of flour are needed to make {c} muffins?",
+      "template_latex": "A recipe uses {a} cups of flour to make {b} muffins. How many cups of flour are needed to make {c} muffins?",
+      "answer_formula": "a * c / b",
+      "answer_rule": "a * c / b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 1,
+          "max": 4
+        },
+        "b": {
+          "type": "integer",
+          "min": 6,
+          "max": 12
+        },
+        "c": {
+          "type": "integer",
+          "min": 12,
+          "max": 48
+        }
+      },
+      "derived_variables": {},
+      "constraints": [
+        "(a * c) % b == 0",
+        "c != b"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "Set up the proportion x/c = a/b and multiply both sides by c: x = a·c ÷ b.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "2",
+          "b": "8",
+          "c": "12"
+        },
+        "question_latex": "A recipe uses 2 cups of flour to make 8 muffins. How many cups of flour are needed to make 12 muffins?",
+        "answer": "3",
+        "exact_answer": {
+          "numerator": "3",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE29",
+      "label": "Word problem: map scale (ax = b)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "On a map, 1 inch represents {a} miles. Two towns are {b} miles apart. How many inches apart are they on the map?",
+      "template_latex": "On a map, 1 inch represents {a} miles. Two towns are {b} miles apart. How many inches apart are they on the map?",
+      "answer_formula": "b / a",
+      "answer_rule": "b / a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 5,
+          "max": 50
+        },
+        "b": {
+          "type": "integer",
+          "min": 10,
+          "max": 300
+        }
+      },
+      "derived_variables": {},
+      "constraints": [
+        "(2 * b) % a == 0",
+        "b > a"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "Let x be the map distance. Then a·x = b, so x = b ÷ a (a decimal such as 2.5 is fine).",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "8",
+          "b": "100"
+        },
+        "question_latex": "On a map, 1 inch represents 8 miles. Two towns are 100 miles apart. How many inches apart are they on the map?",
+        "answer": "12.5",
+        "exact_answer": {
+          "numerator": "25",
+          "denominator": "2"
+        }
+      }
+    },
+    {
+      "id": "OSE30",
+      "label": "Word problem: gym membership (ax + b = c)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "A gym charges a \\(\\${b}\\) sign-up fee plus \\(\\${a}\\) per month. Jordan paid \\(\\${c}\\) in total. For how many months did Jordan pay?",
+      "template_latex": "A gym charges a \\(\\${b}\\) sign-up fee plus \\(\\${a}\\) per month. Jordan paid \\(\\${c}\\) in total. For how many months did Jordan pay?",
+      "answer_formula": "(c - b) / a",
+      "answer_rule": "(c - b) / a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        },
+        "a": {
+          "type": "integer",
+          "min": 15,
+          "max": 45
+        },
+        "b": {
+          "type": "integer",
+          "min": 20,
+          "max": 99
+        }
+      },
+      "derived_variables": {
+        "c": "a * k + b"
+      },
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Let x be the number of months. Then a·x + b = c; subtract b, then divide by a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "b": "26",
+          "a": "36",
+          "k": "4",
+          "c": "170"
+        },
+        "question_latex": "A gym charges a \\(\\$26\\) sign-up fee plus \\(\\$36\\) per month. Jordan paid \\(\\$170\\) in total. For how many months did Jordan pay?",
+        "answer": "4",
+        "exact_answer": {
+          "numerator": "4",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE31",
+      "label": "Word problem: taxi fare (ax + b = c)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "A taxi charges \\(\\${b}\\) to start plus \\(\\${a}\\) per mile. A ride costs \\(\\${c}\\). How many miles long was the ride?",
+      "template_latex": "A taxi charges \\(\\${b}\\) to start plus \\(\\${a}\\) per mile. A ride costs \\(\\${c}\\). How many miles long was the ride?",
+      "answer_formula": "(c - b) / a",
+      "answer_rule": "(c - b) / a",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "k": {
+          "type": "integer",
+          "min": 2,
+          "max": 20
+        },
+        "q": {
+          "type": "integer",
+          "min": 6,
+          "max": 14
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 6
+        }
+      },
+      "derived_variables": {
+        "a": "q / 4",
+        "c": "a * k + b"
+      },
+      "constraints": [
+        "q % 2 == 1",
+        "(q * k) % 4 == 0"
+      ],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [
+        "derived_variables"
+      ],
+      "explanation": "Let x be the miles. Then a·x + b = c; subtract b, then divide by a.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "b": "3",
+          "k": "12",
+          "q": "11",
+          "a": "2.75",
+          "c": "36"
+        },
+        "question_latex": "A taxi charges \\(\\$3\\) to start plus \\(\\$2.75\\) per mile. A ride costs \\(\\$36\\). How many miles long was the ride?",
+        "answer": "12",
+        "exact_answer": {
+          "numerator": "12",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "OSE32",
+      "label": "Word problem: shared candy (x/a = b)",
+      "category": "One-Step-Equations",
+      "group": "Word problems",
+      "subject": "Math",
+      "active": true,
+      "path": "Math-Template/Common-Math/Solve-Easy-Equations/One-Step-Equations",
+      "template": "A bag of candy is shared equally among {a} students, and each student gets {b} pieces. How many pieces were in the bag?",
+      "template_latex": "A bag of candy is shared equally among {a} students, and each student gets {b} pieces. How many pieces were in the bag?",
+      "answer_formula": "a * b",
+      "answer_rule": "a * b",
+      "answer_latex_template": null,
+      "answer_mode": "numeric",
+      "min_value": 1,
+      "max_value": 10,
+      "variables": {
+        "a": {
+          "type": "integer",
+          "min": 3,
+          "max": 30
+        },
+        "b": {
+          "type": "integer",
+          "min": 2,
+          "max": 12
+        }
+      },
+      "derived_variables": {},
+      "constraints": [],
+      "grading_tolerance_percent": 0,
+      "absolute_tolerance": 0,
+      "decimal_places": 2,
+      "accept_rounded_decimal": false,
+      "grading_policy": "exact",
+      "requires_engine_features": [],
+      "explanation": "Let x be the number of pieces. Then x/a = b, so x = a · b.",
+      "diagram": null,
+      "domain_restrictions": [],
+      "grading_requirements": "Exact value; fractions (e.g. 7/3) and exact decimals are both accepted.",
+      "numeric_form_compatible": true,
+      "example": {
+        "variables": {
+          "a": "11",
+          "b": "3"
+        },
+        "question_latex": "A bag of candy is shared equally among 11 students, and each student gets 3 pieces. How many pieces were in the bag?",
+        "answer": "33",
+        "exact_answer": {
+          "numerator": "33",
+          "denominator": "1"
+        }
+      }
+    }
+  ]
+}

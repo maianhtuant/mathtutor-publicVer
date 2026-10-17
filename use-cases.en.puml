@@ -1,0 +1,101 @@
+@startuml
+left to right direction
+actor "Student" as Student
+actor "Admin" as Admin
+actor "Teacher" as Teacher
+actor "Editor" as Editor
+actor "Supervisor" as Supervisor
+rectangle "Math Learning Website" {
+  usecase "Register account" as Register
+  usecase "Log in" as Login
+  usecase "Enroll in course" as Enroll
+  usecase "Study lesson" as Study
+  usecase "Start / resume practice set" as Start
+  usecase "Generate and snapshot new questions" as Generate
+  usecase "Save answers" as Save
+  usecase "Submit attempt" as Submit
+  usecase "Grade from snapshots" as Grade
+  usecase "View progress and results by skill" as Progress
+  usecase "Manage accounts" as Accounts
+  usecase "Manage content" as Content
+  usecase "Create / edit math template draft" as Templates
+  usecase "Preview template" as TemplatePreview
+  usecase "Publish template version" as PublishTemplate
+  usecase "Create / edit practice set" as Sets
+  usecase "Select templates, versions, and question counts" as Rules
+  usecase "Preview practice set" as SetPreview
+  usecase "Publish practice set" as PublishSet
+  usecase "Grant / revoke student practice access" as Assign
+  usecase "View assigned practice sets" as Assigned
+  usecase "Check practice access" as Access
+  usecase "View learning reports" as Reports
+  usecase "Create student in own course / class" as CreateStudent
+  usecase "Import template bank" as ImportBank
+  usecase "View everything (read-only)" as ViewAll
+}
+Student --> Register
+Student --> Login
+Student --> Enroll
+Student --> Study
+Student --> Assigned
+Student --> Start
+Student --> Save
+Student --> Submit
+Student --> Progress
+Admin --> Login
+Admin --> Accounts
+Admin --> Content
+Admin --> Templates
+Admin --> TemplatePreview
+Admin --> PublishTemplate
+Admin --> Sets
+Admin --> SetPreview
+Admin --> PublishSet
+Admin --> Assign
+Admin --> Reports
+Admin --> ImportBank
+Teacher --> Login
+Teacher --> CreateStudent
+Teacher --> Templates
+Teacher --> TemplatePreview
+Teacher --> PublishTemplate
+Teacher --> ImportBank
+Teacher --> Sets
+Teacher --> SetPreview
+Teacher --> PublishSet
+Teacher --> Assign
+Teacher --> Reports
+Editor --> Login
+Editor --> Content
+Editor --> Templates
+Editor --> TemplatePreview
+Editor --> PublishTemplate
+Editor --> ImportBank
+Editor --> Sets
+Editor --> SetPreview
+Editor --> PublishSet
+Supervisor --> Login
+Supervisor --> ViewAll
+Supervisor --> Reports
+Generate ..> Start : <<extend>>\n[no open attempt and eligible]
+Sets ..> Rules : <<include>>
+Start ..> Access : <<include>>
+Save ..> Access : <<include>>
+Submit ..> Access : <<include>>
+Submit ..> Grade : <<include>>
+note bottom of Start
+  Login and an administrator assignment are required.
+  Resuming an open attempt reads its snapshots.
+  Questions are generated only for new attempts.
+end note
+note bottom of Login
+  Login is a precondition for
+  functions requiring authentication.
+end note
+note right of Teacher
+  Teacher: only own templates / sets and own students
+  (enrolled in their courses or tagged with their classes).
+  Editor: all content, no accounts or student data.
+  Supervisor: sees everything, changes nothing.
+end note
+@enduml

@@ -1,0 +1,62 @@
+# Production stack on the EC2 server (https://gedtutor.org). Used by .github/workflows/deploy.yml:
+#   docker compose -p mathtutor-prod --env-file .env.production -f compose.production.yml up -d
+# Never deploy with plain `docker compose up`: that runs docker-compose.yml, the development stack
+# (localhost CORS, demo data, default passwords). Secrets live in .env.production (see .env.production.example).
+# The host nginx (deploy/nginx/gedtutor.org.conf) serves HTTPS and proxies to the frontend on 127.0.0.1:3000.
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    ports:
+        - "5433:5432"
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: mathtutor
+      POSTGRES_USER: ${DB_USERNAME:?Required}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Required}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d mathtutor"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  math-service:
+    build: ./math-service
+    restart: unless-stopped
+    environment:
+      MATH_SERVICE_API_KEY: ${MATH_SERVICE_API_KEY:?Required}
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/mathtutor
+      DB_USERNAME: ${DB_USERNAME:?Required}
+      DB_PASSWORD: ${DB_PASSWORD:?Required}
+      MATH_SERVICE_URL: http://math-service:8000
+      MATH_SERVICE_API_KEY: ${MATH_SERVICE_API_KEY:?Required}
+      JWT_SECRET: ${JWT_SECRET:?Required}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:?Required}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Required}
+      SEED_DEMO_DATA: "false"
+      CORS_ORIGINS: https://gedtutor.org,https://www.gedtutor.org
+    depends_on:
+      postgres:
+        condition: service_healthy
+      math-service:
+        condition: service_healthy
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports:
+      # Only the host nginx reaches it; must match proxy_pass in deploy/nginx/gedtutor.org.conf.
+      - "127.0.0.1:3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  pgdata:
